@@ -1,0 +1,32 @@
+Pillow 9.5.0 204 6898034
+PyYAML 6.0.1 43 630792
+networkx 2.6.3 1133 9916333
+packaging 23.1 36 262582
+pyparsing 3.1.0 28 728940
+PyWavelets 1.0.3 96 8160170
+certifi 2025.10.5 14 301731
+chardet 3.0.4 89 791881
+charset-normalizer 3.4.2 34 422261
+idna 2.8 10 256442
+imageio 2.31.2 113 2014487
+numpy 1.21.6 1196 58551787
+opencv-python 4.10.0.84 101 111470863
+requests 2.31.0 42 341785
+scikit-image 0.15.0 852 43899364
+scipy 1.7.3 1851 114905582
+six 1.12.0 2 32611
+torch 1.13.1 2509 302052228
+torchvision 0.14.1 314 4812835
+typing_extensions 4.7.1 7 222776
+urllib3 2.0.7 70 702500
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\retinexformer37\Lib\site-packages\imageio-2.6.0.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\retinexformer37\Lib\site-packages\networkx-2.3.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\retinexformer37\Lib\site-packages\packaging-19.2.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\retinexformer37\Lib\site-packages\Pillow-6.2.0.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\retinexformer37\Lib\site-packages\pyparsing-2.4.2.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\llformer37\Lib\site-packages\imageio-2.6.0.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\llformer37\Lib\site-packages\networkx-2.3.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\llformer37\Lib\site-packages\packaging-19.2.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\llformer37\Lib\site-packages\Pillow-6.2.0.dist-info
+Remove stale task-copied metadata only: <M1_ROOT>\work\venvs\llformer37\Lib\site-packages\pyparsing-2.4.2.dist-info
+Physical package copies complete; both envs have include-system-site-packages=false

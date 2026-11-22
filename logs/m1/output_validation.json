@@ -1,0 +1,42 @@
+[
+  {
+    "model": "retinexformer",
+    "file": "<M1_ROOT>\\outputs\\retinexformer\\111.png",
+    "bytes": 320793,
+    "sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58",
+    "width": 600,
+    "height": 400,
+    "mode": "RGB",
+    "min": 12,
+    "max": 255,
+    "std": 44.38618484150998,
+    "mean_rgb_0_255": [
+      132.14197083333335,
+      132.7618375,
+      136.184925
+    ],
+    "mean_absolute_change_0_255": 114.0907375,
+    "black_pixels_fraction": 0.0,
+    "white_pixels_fraction": 4.1666666666666665e-05
+  },
+  {
+    "model": "llformer",
+    "file": "<M1_ROOT>\\outputs\\llformer\\111.png",
+    "bytes": 374980,
+    "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+    "width": 600,
+    "height": 400,
+    "mode": "RGB",
+    "min": 8,
+    "max": 255,
+    "std": 43.85454031205808,
+    "mean_rgb_0_255": [
+      123.66561666666666,
+      125.414425,
+      126.68584583333333
+    ],
+    "mean_absolute_change_0_255": 105.64978888888889,
+    "black_pixels_fraction": 0.0,
+    "white_pixels_fraction": 0.0007625
+  }
+]

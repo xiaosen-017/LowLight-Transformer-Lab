@@ -1,0 +1,32 @@
+Collecting torch==2.2.2
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /packages/5c/01/5ab75f138bf32d7a69df61e4997e24eccad87cc009f5fb7e2a31af8a4036/torch-2.2.2-cp311-cp311-win_amd64.whl.metadata
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /packages/5c/01/5ab75f138bf32d7a69df61e4997e24eccad87cc009f5fb7e2a31af8a4036/torch-2.2.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading torch-2.2.2-cp311-cp311-win_amd64.whl.metadata (26 kB)
+Collecting torchvision==0.17.2
+  Downloading torchvision-0.17.2-cp311-cp311-win_amd64.whl.metadata (6.6 kB)
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp311-cp311-win_amd64.whl.metadata (61 kB)
+     -------------------------------------- 61.0/61.0 kB 360.3 kB/s eta 0:00:00
+Collecting pillow==10.4.0
+  Downloading pillow-10.4.0-cp311-cp311-win_amd64.whl.metadata (9.3 kB)
+Collecting einops==0.8.0
+  Downloading einops-0.8.0-py3-none-any.whl.metadata (12 kB)
+Collecting PyYAML==6.0.2
+  Downloading PyYAML-6.0.2-cp311-cp311-win_amd64.whl.metadata (2.1 kB)
+Collecting filelock (from torch==2.2.2)
+  Downloading filelock-4.3.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting typing-extensions>=4.8.0 (from torch==2.2.2)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy (from torch==2.2.2)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.2.2)
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch==2.2.2)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.2.2)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.2.2)
+  Downloading markupsafe-3.0.4-cp311-cp311-win_amd64.whl.metadata (2.8 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch==2.2.2)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Downloading torch-2.2.2-cp311-cp311-win_amd64.whl (198.6 MB)

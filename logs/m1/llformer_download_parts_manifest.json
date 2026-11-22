@@ -1,0 +1,47 @@
+[
+  {
+    "name": "00.bin",
+    "size": 33024182,
+    "sha256": "3a8ee4b1044773fc248d97884391bfbc95c20dc9351435569dee389246cab654"
+  },
+  {
+    "name": "01.bin",
+    "size": 33024182,
+    "sha256": "4eada95a0a3e2af5a05c741c410da0de47c225036382dea91c4af35af47fa602"
+  },
+  {
+    "name": "02.bin",
+    "size": 33024182,
+    "sha256": "3e78837ec99e99b7f794858c73d0290d1cae0689bc8cfab8559f28f6c14bd13a"
+  },
+  {
+    "name": "03.bin",
+    "size": 33024182,
+    "sha256": "61d0b43a50a72a57b647a40fa56c3eb17d7bbd4de1922356c90b8b3493fbaee9"
+  },
+  {
+    "name": "04.bin",
+    "size": 33024182,
+    "sha256": "e933f31f1e24113bc7652f0f4dbc98e181e74087ec8b6d7cc79ce4dd26389947"
+  },
+  {
+    "name": "05.bin",
+    "size": 33024182,
+    "sha256": "03f1249d5aa63dacbc9b53c887b196dfafc486d0856cdb67d2a79c14bb5e3296"
+  },
+  {
+    "name": "06.bin",
+    "size": 33024182,
+    "sha256": "923c59099b899b20ce941aef3d2587dd348dab4ea31d02145c8c2eaaf08657e9"
+  },
+  {
+    "name": "07.bin",
+    "size": 33024176,
+    "sha256": "4b3bcff7d960a0788361710d7905fa2bbc1ba872ed85bf56cb5133ee0b8dd00c"
+  },
+  {
+    "name": "prefix.bin",
+    "size": 31916032,
+    "sha256": "a162aa03ffc1d53d551cc340a77f389e846ef383d70e312c62b708835426a3df"
+  }
+]

@@ -1,0 +1,19 @@
+official Drive LOL model_bestPSNR.pth expected bytes 296109482 resume prefix 31916032
+GET byte range 31916032 64940213
+GET byte range 64940214 97964395GET byte range 
+97964396GET byte range 130988577 130988578 164012759
+
+GET byte range 164012760 197036941
+GET byte range 197036942 230061123
+GET byte range 230061124 263085305
+GET byte range 263085306 296109481
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+curl: (56) Failure when receiving data from the peer
+verified range 6 33024182
+curl: (56) Failure when receiving data from the peer
+curl: (56) Failure when receiving data from the peer
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+curl: (56) Failure when receiving data from the peer
+curl: (56) Failure when receiving data from the peer
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed

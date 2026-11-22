@@ -1,0 +1,9 @@
+Collecting einops==0.6.1
+  Downloading einops-0.6.1-py3-none-any.whl (42 kB)
+  Saved <USER_HOME>\documents\codex\2026-11-23\m1-md-retinexformer-llformer-m1-report\work\wheelhouse\einops-0.6.1-py3-none-any.whl
+Collecting natsort==8.4.0
+  Downloading natsort-8.4.0-py3-none-any.whl (38 kB)
+  Saved <USER_HOME>\documents\codex\2026-11-23\m1-md-retinexformer-llformer-m1-report\work\wheelhouse\natsort-8.4.0-py3-none-any.whl
+Successfully downloaded einops natsort
+WARNING: You are using pip version 20.1.1; however, version 24.0 is available.
+You should consider upgrading via the '<M1_ROOT>\work\venvs\retinexformer37\Scripts\python.exe -m pip install --upgrade pip' command.

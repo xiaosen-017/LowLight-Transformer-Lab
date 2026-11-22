@@ -1,0 +1,1 @@
+Python 3.11 / Torch 2.2.2 download route cancelled deliberately after repeated TLS failures and very slow transfer; switched to isolated Python 3.7.9 + physical copies of existing Torch 1.13.1+cpu. No installation into base environment.

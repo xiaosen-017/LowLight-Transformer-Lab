@@ -1,0 +1,10 @@
+$ErrorActionPreference = 'Stop'
+$TaskRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+Set-Location -LiteralPath $TaskRoot
+$env:PYTHONNOUSERSITE = '1'
+$env:PYTHONPATH = Join-Path $TaskRoot 'work/repos/Retinexformer'
+$M1Python = Join-Path $TaskRoot 'work/venvs/retinexformer37/Scripts/python.exe'
+$M1Log = Join-Path $TaskRoot ('outputs/logs/retinexformer_rerun_' + (Get-Date -Format yyyyMMdd_HHmmss) + '.log')
+& $M1Python -u outputs/docs/infer_retinexformer.py --repo work/repos/Retinexformer --weights work/LOL_v1.pth --input outputs/samples/input/111.png --output outputs/retinexformer/111.png --threads 4 2>&1 | Tee-Object -FilePath $M1Log
+if ($LASTEXITCODE -ne 0) { throw "Retinexformer failed. See $M1Log" }
+Write-Output "Saved: $TaskRoot/outputs/retinexformer/111.png"

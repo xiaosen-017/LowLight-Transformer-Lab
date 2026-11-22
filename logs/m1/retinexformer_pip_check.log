@@ -1,0 +1,2 @@
+scikit-image 0.15.0 requires matplotlib, which is not installed.
+requests 2.31.0 requires idna, which is not installed.

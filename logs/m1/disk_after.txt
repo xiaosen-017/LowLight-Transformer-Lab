@@ -1,0 +1,5 @@
+
+DeviceID  : C:
+Size      : 511002537984
+FreeSpace : 56209539072
+

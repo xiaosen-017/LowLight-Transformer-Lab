@@ -1,0 +1,14 @@
+{
+  "Retinexformer": {
+    "url": "https://github.com/caiyuanhao1998/Retinexformer.git",
+    "commit": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+    "directory": "third_party/Retinexformer",
+    "license": "MIT"
+  },
+  "LLFormer": {
+    "url": "https://github.com/TaoWangzj/LLFormer.git",
+    "commit": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+    "directory": "third_party/LLFormer",
+    "license": "CC BY-NC-SA 4.0 (academic research)"
+  }
+}

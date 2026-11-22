@@ -1,0 +1,15 @@
+OS: Microsoft Windows 11 家庭中文版 x64, 10.0.22000 (WMI); Python platform reports Windows-10 kernel compatibility string.
+Shell / Terminal: PowerShell 7.6.9, native Windows terminal via execution tool.
+Workspace path: <M1_ROOT>
+CPU / RAM: AMD Ryzen 5 5625U, 6 cores / 12 logical processors; total RAM 16,057,404 KiB (~15.31 GiB); initial available RAM 3,096,148 KiB.
+Python / Conda: PATH Anaconda Python 3.7.4 at <LEGACY_BASE>/python.exe; Conda 4.7.12. Also installed CPython 3.7.9 and 3.11.9. FINAL two isolated venvs use CPython 3.7.9.
+GPU / VRAM: AMD Radeon (TM) Graphics integrated; WMI AdapterRAM 536,870,912 bytes (512 MiB reported, not CUDA VRAM; shared graphics memory not measured).
+Driver: AMD 31.0.21912.2004; no NVIDIA GPU/driver detected by inventory. nvidia-smi and nvcc absent.
+CUDA availability: False; Torch runtime 1.13.1+cpu; torch.version.cuda=None. No CUDA install or driver changes made.
+Git / LFS: git 2.20.1.windows.1; git-lfs 2.6.1. LFS not required for checked-out source, weights downloaded separately from official release sources.
+Disk free: initial C: 58,762,240,000 bytes (~54.73 GiB); later snapshot 56,209,539,072 bytes (~52.35 GiB), see disk_after.txt; free space changes with ongoing downloads.
+WSL2: only docker-desktop, stopped; no ordinary user Linux distribution selected.
+Network and official weight links accessible: direct Git/Python TLS/connection failures; existing Windows proxy was 127.0.0.1:7897. Supplying it to task-scoped Git/pip/curl allowed both official clones, HF LOL_v1.pth, and Google Drive LOL model_bestPSNR.pth to complete. Chunked resumption addressed dropped weight transfers.
+Recommended execution strategy: native Windows CPU, 4 Torch threads, two physically separate Python 3.7.9 venvs, same full-size 600x400 LOL-v1 example. Both actually passed official-weight forward inference.
+Isolation: include-system-site-packages=false; PYTHONNOUSERSITE=1; imported module paths stay inside their respective venv; torch_cpu.dll is a distinct physical file from base and other environment (os.path.samefile=False).
+Dependency check: pip check passed in both environments. Full imports and versions: environments/*_runtime.json and logs/*environment*.log.

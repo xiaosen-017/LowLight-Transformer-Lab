@@ -1,0 +1,30 @@
+# Python 3.7.x, Windows x64, CPU. Official PyTorch CPU wheels:
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+numpy==1.21.6
+Pillow==9.5.0
+PyYAML==6.0.1
+einops==0.6.1
+natsort==8.4.0
+opencv-python==4.10.0.84
+scikit-image==0.15.0
+scipy==1.7.3
+matplotlib==3.5.3
+imageio==2.31.2
+networkx==2.6.3
+PyWavelets==1.0.3
+packaging==23.1
+pyparsing==3.1.0
+typing-extensions==4.7.1
+cycler==0.11.0
+fonttools==4.38.0
+kiwisolver==1.4.4
+python-dateutil==2.8.2
+six==1.12.0
+requests==2.31.0
+idna==2.8
+urllib3==2.0.7
+charset-normalizer==3.4.2
+chardet==3.0.4
+certifi==2025.10.5

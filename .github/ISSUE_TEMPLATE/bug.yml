@@ -1,0 +1,18 @@
+name: 复现故障
+description: 报告环境、权重、数据或脚本错误
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 最小复现
+      description: commit、模型/权重哈希、环境、输入尺寸及命令。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际错误与期望
+      description: 贴脱敏日志，勿贴Token或个人绝对路径。
+    validations:
+      required: true

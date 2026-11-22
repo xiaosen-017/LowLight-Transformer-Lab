@@ -1,0 +1,8 @@
+cycler 0.11.0 8 32058
+fonttools 4.38.0 575 6270056
+kiwisolver 1.4.4 11 138151
+python-dateutil 2.8.2 44 659191
+idna 2.8 10 256442
+matplotlib 3.5.3 817 23052648
+six 1.12.0 2 32611
+Physical package copies complete; both envs have include-system-site-packages=false

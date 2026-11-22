@@ -1,0 +1,16 @@
+[
+  {
+    "file": "work\\LOL_v1.pth",
+    "bytes": 6475021,
+    "sha256": "9b4810dc51322fab70be8658ee0ad1df64a54aa814497b7849767baa2ff32cd1",
+    "zip_member_count": 124,
+    "zip_crc_error": null
+  },
+  {
+    "file": "work\\model_bestPSNR.pth",
+    "bytes": 296109482,
+    "sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+    "zip_member_count": 4453,
+    "zip_crc_error": null
+  }
+]

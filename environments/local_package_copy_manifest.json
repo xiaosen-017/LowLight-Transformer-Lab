@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Pillow",
+    "version": "9.5.0",
+    "files": 204,
+    "bytes": 6898034,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "cfc41af2a9ef398bb8143884c085953b33d37b2f8b53056b85b96f132ed034fe"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.1",
+    "files": 43,
+    "bytes": 630792,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "95b0e15235130e7cb32d160d5ae2ec080b0f67c7ed5bd69a8738d96becd87d3e"
+  },
+  {
+    "name": "networkx",
+    "version": "2.6.3",
+    "files": 1133,
+    "bytes": 9916333,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "be6fb2c1435784d60c39c714bb5f9da93f332ffc18952f62d34f8b878f7d0a24"
+  },
+  {
+    "name": "packaging",
+    "version": "23.1",
+    "files": 36,
+    "bytes": 262582,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "268864e6221576b87974444334921dba6e191394390bee16ef37e32562f0fc7f"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.1.0",
+    "files": 28,
+    "bytes": 728940,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "e4811a42c8567d48f823538669d6818a692564f2f2a1e144bcbf0f05f12c1afe"
+  },
+  {
+    "name": "PyWavelets",
+    "version": "1.0.3",
+    "files": 96,
+    "bytes": 8160170,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "50b041108c0fe66009cdf7fc1bb2a83fd69c8fc689e0ea80f29f21451cbdc226"
+  },
+  {
+    "name": "certifi",
+    "version": "2025.10.5",
+    "files": 14,
+    "bytes": 301731,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "6a012e41856c6cd1a14c59ce537713c48d18b4a7d94bc40e506a75f212396e25"
+  },
+  {
+    "name": "chardet",
+    "version": "3.0.4",
+    "files": 89,
+    "bytes": 791881,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "8490bd8c1f111423f34c341617e6caf46d0a7801c30e0faf891ef12ea71310a3"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.4.2",
+    "files": 34,
+    "bytes": 422261,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "58c76825ba5cda880da25102f5ce59fda1dc1d822e6afad25eb9731e7e4df6e2"
+  },
+  {
+    "name": "idna",
+    "version": "2.8",
+    "files": 10,
+    "bytes": 256442,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "969de9b3d52225265875fcadfe313fad7da2a62dfd47aa5153b6daaefaa43faa"
+  },
+  {
+    "name": "imageio",
+    "version": "2.31.2",
+    "files": 113,
+    "bytes": 2014487,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "5c62bfc46cad62139a4252ed9715ceab6b8b4764cd80f6f43cc5906685e1893e"
+  },
+  {
+    "name": "numpy",
+    "version": "1.21.6",
+    "files": 1196,
+    "bytes": 58551787,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "f70f5afca30a930970a721fa7a75952c6701ac59674f5431440e4c0ed37769a9"
+  },
+  {
+    "name": "opencv-python",
+    "version": "4.10.0.84",
+    "files": 101,
+    "bytes": 111470863,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "57c905d459616cb77096dea692b2f2681b42307c939f6789571eb099deae81ef"
+  },
+  {
+    "name": "requests",
+    "version": "2.31.0",
+    "files": 42,
+    "bytes": 341785,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "bfd02cdaae588a8e2d1da6f4f03df133142724d69bf6e85bc993635145c2d1c2"
+  },
+  {
+    "name": "scikit-image",
+    "version": "0.15.0",
+    "files": 852,
+    "bytes": 43899364,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "cb096cb9ceac7feb698bd91f9c06b2e597e3656c14b6bbec4a213c3c6746936f"
+  },
+  {
+    "name": "scipy",
+    "version": "1.7.3",
+    "files": 1851,
+    "bytes": 114905582,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "ba7665f04fedbadee1073ca7ffb91f933c88c70ca5d40b75d732fb4332ab66f4"
+  },
+  {
+    "name": "six",
+    "version": "1.12.0",
+    "files": 2,
+    "bytes": 32611,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "528a693012092b8fee23be9819d533412a9028e2d5b8501eaf21aa31d583245c"
+  },
+  {
+    "name": "torch",
+    "version": "1.13.1",
+    "files": 2509,
+    "bytes": 302052228,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "d223abd9e03b4a370ac17f9ff912a5bf40d58d257c24079bf0fc07a5f14512df"
+  },
+  {
+    "name": "torchvision",
+    "version": "0.14.1",
+    "files": 314,
+    "bytes": 4812835,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "b889682b78ac286efaf3c2a64f4bb913708de8f2c49631d0980f482894240290"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.7.1",
+    "files": 7,
+    "bytes": 222776,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "54d3bdb05e4b42f1f149d6da667147986b46c0bc429b84998da49f5e282d317f"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.0.7",
+    "files": 70,
+    "bytes": 702500,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "a08907629d759b2c45812236049d07ec25c6bcee758b12793ed0a20b44189b9f"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "model": "retinexformer",
+    "smoke": "PASS",
+    "historical_output_sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58",
+    "migrated_output_sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58",
+    "smoke_output_sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58",
+    "match": "byte-identical",
+    "inference_note": "one image only; environment/code/weights reused read-only; migration check not M2/M3/M4"
+  },
+  {
+    "model": "llformer",
+    "smoke": "PASS",
+    "historical_output_sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+    "migrated_output_sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+    "smoke_output_sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+    "match": "byte-identical",
+    "inference_note": "one image only; environment/code/weights reused read-only; migration check not M2/M3/M4"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "environment": "llformer37",
+  "python": "3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)]",
+  "executable": "<M1_ROOT>\\work\\venvs\\llformer37\\Scripts\\python.exe",
+  "prefix": "<M1_ROOT>\\work\\venvs\\llformer37",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "machine": "AMD64",
+  "user_site_enabled": false,
+  "cuda_available": false,
+  "cuda_runtime": null,
+  "versions": {
+    "torch_runtime": "1.13.1+cpu",
+    "torchvision_runtime": "0.14.1+cpu",
+    "numpy": "1.21.6",
+    "Pillow": "9.5.0",
+    "einops": "0.6.1",
+    "PyYAML": "6.0.1",
+    "opencv": "4.10.0",
+    "scikit-image": "0.15.0",
+    "natsort": "8.4.0"
+  },
+  "module_paths": {
+    "torch": "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages\\torch\\__init__.py",
+    "torchvision": "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages\\torchvision\\__init__.py",
+    "numpy": "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages\\numpy\\__init__.py",
+    "PIL": "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages\\PIL\\__init__.py",
+    "yaml": "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages\\yaml\\__init__.py"
+  },
+  "torch_dll_is_same_file_as_base": false,
+  "torch_dll_is_same_file_as_other_venv": false,
+  "sys_path": [
+    "<M1_ROOT>\\outputs\\docs",
+    "<PYTHON_HOME>\\python37.zip",
+    "<PYTHON_HOME>\\DLLs",
+    "<PYTHON_HOME>\\lib",
+    "<PYTHON_HOME>",
+    "<M1_ROOT>\\work\\venvs\\llformer37",
+    "<M1_ROOT>\\work\\venvs\\llformer37\\lib\\site-packages"
+  ]
+}

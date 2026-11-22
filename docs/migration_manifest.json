@@ -1,0 +1,402 @@
+[
+  {
+    "project_file": "environments/additional_package_copy_manifest.json",
+    "bytes": 1837,
+    "sha256": "d5768455374ea95139d1729b0b4e264f660e5efb364540283148208ac7145853"
+  },
+  {
+    "project_file": "environments/llformer_freeze.txt",
+    "bytes": 506,
+    "sha256": "4e082fadb39a2067505c8c7f11c87c09c14cc704ea4673b95be1d8636f47a360"
+  },
+  {
+    "project_file": "environments/llformer_runtime.redacted.json",
+    "bytes": 1548,
+    "sha256": "7de5f4a8b186ad76d05368c40067dbba6c5555fde2686232618b9f5c5985c76d"
+  },
+  {
+    "project_file": "environments/local_package_copy_manifest.json",
+    "bytes": 5342,
+    "sha256": "dd1a44c17672a1e981744760b3c0daa13fd711b57792b638e6b3cbdaa67cf3ca"
+  },
+  {
+    "project_file": "environments/README.md",
+    "bytes": 1333,
+    "sha256": "7e818bafe273fdd363302563217ae09239dda50a0fe5e7be8a1df72a224c7e88"
+  },
+  {
+    "project_file": "environments/requirements_cpu_py37.txt",
+    "bytes": 634,
+    "sha256": "aacd6c9d9b648e126d82a5b0b6986d714827351eb738011ce78443c09b58af1b"
+  },
+  {
+    "project_file": "environments/retinexformer_freeze.txt",
+    "bytes": 506,
+    "sha256": "4e082fadb39a2067505c8c7f11c87c09c14cc704ea4673b95be1d8636f47a360"
+  },
+  {
+    "project_file": "environments/retinexformer_runtime.redacted.json",
+    "bytes": 1598,
+    "sha256": "adc80d380dca43672aea67bd3e1227c1dcb0021598ff9b1cc5b1165ef76677d0"
+  },
+  {
+    "project_file": "logs/m1/checkpoint_integrity.json",
+    "bytes": 428,
+    "sha256": "01c8a25bf7f36fcfe74410e741eeddbb8a0ccd65ee00a304c50b24f86402f190"
+  },
+  {
+    "project_file": "logs/m1/deliverable_check.txt",
+    "bytes": 171,
+    "sha256": "a88f5c91ef46b202cd732544e20a42098e89896545bc5dd6a5600f14ac8ec82b"
+  },
+  {
+    "project_file": "logs/m1/disk_after.txt",
+    "bytes": 71,
+    "sha256": "6ae71fe01f07f411d1dc112ba26ebfd4614e326ecee045df2ac48dbfedac56ac"
+  },
+  {
+    "project_file": "logs/m1/environment.txt",
+    "bytes": 2231,
+    "sha256": "1b9ee7a788c5b4775d99ca3ace541dc15f67c3bc2359293a5bf148cbed74cc89"
+  },
+  {
+    "project_file": "logs/m1/environment_extra.txt",
+    "bytes": 167,
+    "sha256": "671e60200b4cff6ca042f58cabd7dcf1e5595dd141386cbac0a7617f3aa36ee1"
+  },
+  {
+    "project_file": "logs/m1/environment_isolation_llformer.log",
+    "bytes": 1550,
+    "sha256": "37b52d4009e4a88983a1d8aaf2606a1ed2aedcc0c1cc3060a5e2dd84a48731d2"
+  },
+  {
+    "project_file": "logs/m1/environment_isolation_retinexformer.log",
+    "bytes": 1600,
+    "sha256": "422a09dc4b58b88b0eb85d64ef64c8a8a6344e9988229b5e7ab9bad8df12bd62"
+  },
+  {
+    "project_file": "logs/m1/environment_raw.txt",
+    "bytes": 5915,
+    "sha256": "31d348f3dba6d6b29b4e2f5f68117b5b9c680bda5f83d1713e0d2a0348e01187"
+  },
+  {
+    "project_file": "logs/m1/install_strategy_change.txt",
+    "bytes": 238,
+    "sha256": "ae1dfe36fc4e772db1bacce788d78f1d046cd13ed35094103e7f44bed70e2b98"
+  },
+  {
+    "project_file": "logs/m1/llformer_clone.log",
+    "bytes": 159,
+    "sha256": "ef1637fc7466c0331d5476c2a42b61638133cd7b2bd25a660b938652be26b89c"
+  },
+  {
+    "project_file": "logs/m1/llformer_clone_proxy.log",
+    "bytes": 180,
+    "sha256": "9bf2b894edf9add9e20629c03f0c7ee7d8696d1ca0a213e877b875cdcd910707"
+  },
+  {
+    "project_file": "logs/m1/llformer_clone_proxy_retry.log",
+    "bytes": 37,
+    "sha256": "d9fae74cad6c286c62e29756b88f81174e5225dbb5b70ecb90a0697f9a3780dc"
+  },
+  {
+    "project_file": "logs/m1/llformer_clone_proxy_schannel.log",
+    "bytes": 173,
+    "sha256": "863e9efed7428497b6bf5db50dc99187829854fb47cb887f4c9979596117222c"
+  },
+  {
+    "project_file": "logs/m1/llformer_clone_retry.log",
+    "bytes": 162,
+    "sha256": "39414ee9b673b425a741ae4bdd198cbcba5584bd70ee7d00ca3cf50db959742b"
+  },
+  {
+    "project_file": "logs/m1/llformer_download_parts_manifest.json",
+    "bytes": 1258,
+    "sha256": "05da2746d6cb6cf0fa47baeb1cbffb84f843aafdacd11e789944bd9673058059"
+  },
+  {
+    "project_file": "logs/m1/llformer_environment_check.log",
+    "bytes": 515,
+    "sha256": "48bdcfca6467ebe891d266104e735caa77b7287bebd21034d3e6dbd1229d0daf"
+  },
+  {
+    "project_file": "logs/m1/llformer_infer.log",
+    "bytes": 604,
+    "sha256": "dd32db2cb2ddcf03dcf23d42a3f56af97e866a74bd7d78c52ca1bee6ab2cad5b"
+  },
+  {
+    "project_file": "logs/m1/llformer_infer_initial_duplicate_glob.log",
+    "bytes": 740,
+    "sha256": "c85220e16b108a15febbaa73d7423579bd4362d18abe2e4f064cbbd70896ea97"
+  },
+  {
+    "project_file": "logs/m1/llformer_install.log",
+    "bytes": 407,
+    "sha256": "b064d3ad530f1a6547220275ea94ccd66dea9565b69cc363673e2cce063e81ae"
+  },
+  {
+    "project_file": "logs/m1/llformer_models_discovery.log",
+    "bytes": 154,
+    "sha256": "18c1c40d131d78741188274b39f4876cb731581b90aedde4ea58ebc59f147fae"
+  },
+  {
+    "project_file": "logs/m1/llformer_original_cpu_failure.log",
+    "bytes": 1059,
+    "sha256": "90bcfafd6a4a89c427b30aa1fe4c12ad2f049893a946742eee0e44acd4ee7f5c"
+  },
+  {
+    "project_file": "logs/m1/llformer_pip_check.log",
+    "bytes": 122,
+    "sha256": "20b4778d64573b023c5800d06096d2798175adbb955b40bf9a6e53276fb76ed2"
+  },
+  {
+    "project_file": "logs/m1/llformer_pip_check_final.log",
+    "bytes": 31,
+    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  },
+  {
+    "project_file": "logs/m1/llformer_rerun_20261123_003411.log",
+    "bytes": 604,
+    "sha256": "dd32db2cb2ddcf03dcf23d42a3f56af97e866a74bd7d78c52ca1bee6ab2cad5b"
+  },
+  {
+    "project_file": "logs/m1/llformer_source_download.log",
+    "bytes": 642,
+    "sha256": "b8967b89df1cfa52f41f96d60eaf5db7444bcdcda12338e864e2576d91481b1a"
+  },
+  {
+    "project_file": "logs/m1/llformer_weight_discovery.log",
+    "bytes": 5631,
+    "sha256": "758e618fd5a0eaa3d437a30a098928d24e420672ba7adc7dbd211a1979fb8fa1"
+  },
+  {
+    "project_file": "logs/m1/llformer_weight_discovery_proxy.log",
+    "bytes": 77,
+    "sha256": "02cc3f79b4819380d4d9ad84ccebec3ae81d452614e8cfdeccc7a80e05fedfb7"
+  },
+  {
+    "project_file": "logs/m1/llformer_weight_download_confirmed.log",
+    "bytes": 77,
+    "sha256": "02cc3f79b4819380d4d9ad84ccebec3ae81d452614e8cfdeccc7a80e05fedfb7"
+  },
+  {
+    "project_file": "logs/m1/llformer_weight_ranges.log",
+    "bytes": 975,
+    "sha256": "9e3de978daecc33b498e0f36cc6785302ee2cb520776f9287624bb05ba24c015"
+  },
+  {
+    "project_file": "logs/m1/llformer_weight_ranges_resumed.log",
+    "bytes": 2520,
+    "sha256": "dd8fc7b5e9941574011af4f1b460fa3e9b6f6919aecf500bec28a27605015115"
+  },
+  {
+    "project_file": "logs/m1/local_package_copy.log",
+    "bytes": 491,
+    "sha256": "7924b1e7dbeb957658b80af1a28eb4b36794affa714ea6caea33dd24f811ae5a"
+  },
+  {
+    "project_file": "logs/m1/local_package_copy_active.log",
+    "bytes": 1857,
+    "sha256": "f6a50d3f0bacfe1e690ed24f44d81089dbc6cf24b84f3f01d53280ce05f06515"
+  },
+  {
+    "project_file": "logs/m1/local_package_copy_additional.log",
+    "bytes": 270,
+    "sha256": "e91269d0c4129b295357f292ba21e0292eefdedcc7f24e7b51d1c73c1ca627b6"
+  },
+  {
+    "project_file": "logs/m1/output_validation.json",
+    "bytes": 1119,
+    "sha256": "78ae862f40b1ae304fc73762b4b85c3c139d4477a582779867a13fb68ec6af1c"
+  },
+  {
+    "project_file": "logs/m1/output_validation.log",
+    "bytes": 1121,
+    "sha256": "dafccc0cc9c39fa65f508ff5b522b6bbdd3fa371717cea7e7b08222219f18749"
+  },
+  {
+    "project_file": "logs/m1/pip_curl_bridge.log",
+    "bytes": 1041,
+    "sha256": "bb798b478c1ed63a4b73a8b2492a4128827fe263774018960d259ee19b1b1f70"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_clone.log",
+    "bytes": 174,
+    "sha256": "d46314e7fa07c50c9f01ef9bbf5e5fd5b6c9d20c080659d24d368b3662a7dd0f"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_clone_proxy.log",
+    "bytes": 42,
+    "sha256": "0be0529ef86ec7d640f64fee37d5d12165193192fdd5e8094ef8106bbd1a2216"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_clone_retry.log",
+    "bytes": 177,
+    "sha256": "fbdaff4f70f14612349137913696b65ca2066d3a774b98bd1855a6d5f1b45cab"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_environment_check.log",
+    "bytes": 1815,
+    "sha256": "c46ad1e41bcdab73272bfa418bd4ebae01e3205b0ed6851ad52d5b280c35cf1b"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_infer.log",
+    "bytes": 1237,
+    "sha256": "7f050ba2e84c95f0b819e34e6a9a67b343c9d7e344b6d45572bcd87ece61d0aa"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_install.log",
+    "bytes": 407,
+    "sha256": "b064d3ad530f1a6547220275ea94ccd66dea9565b69cc363673e2cce063e81ae"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_install_bridge.log",
+    "bytes": 512,
+    "sha256": "057dc4e0c4f79809ef4e12737579640c3deb399fc1ec1479f16717454c11e28e"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_install_cpu.log",
+    "bytes": 1248,
+    "sha256": "c6c2305c274daaed7b9cd3de218f3dc261539942608b822587ad008913d9589f"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_install_proxy.log",
+    "bytes": 2356,
+    "sha256": "25ca8c425d2a3206c1d44065569834fd6f84a0ce02ea74bb1667ff4d6232f9e0"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_install_pypi.log",
+    "bytes": 956,
+    "sha256": "41ac46b8c40a1e2d6f3bf339afea11cdb2ba491158fdefc0ee7ba88068e17612"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_pip_check.log",
+    "bytes": 122,
+    "sha256": "20b4778d64573b023c5800d06096d2798175adbb955b40bf9a6e53276fb76ed2"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_pip_check_final.log",
+    "bytes": 31,
+    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  },
+  {
+    "project_file": "logs/m1/retinexformer_weight_download.log",
+    "bytes": 5625,
+    "sha256": "3a6a6bb17186fae34c38c57dde921c5c90e4ca72a006009e3c75e47c30c660df"
+  },
+  {
+    "project_file": "logs/m1/small_dependencies_download.log",
+    "bytes": 682,
+    "sha256": "c6368d2f2112a9eb3e6190ae5da574ba5c8f719157e3dd6386addd368a93d966"
+  },
+  {
+    "project_file": "logs/m1/torch_wheel_curl.log",
+    "bytes": 103,
+    "sha256": "f447fb8a7ed2a15e85440fe53ae967bd191a5c6db49536fffa417f3b48566ca7"
+  },
+  {
+    "project_file": "logs/migration/llformer_smoke.log",
+    "bytes": 674,
+    "sha256": "b2ae5d17fe0238c217dbf3f746b07e49eb92e5580b49418a935d458293742be5"
+  },
+  {
+    "project_file": "logs/migration/retinexformer_smoke.log",
+    "bytes": 1267,
+    "sha256": "194c4c62f6daa89e008f4cbf7689d7d47da8b2db49a4caaa6f4a0d23f68c4bce"
+  },
+  {
+    "project_file": "logs/README.md",
+    "bytes": 982,
+    "sha256": "f272313b808a45f925c0959cc18021cdeef33ec6c47b7cddf5a7a22ebb67c71e"
+  },
+  {
+    "project_file": "results/m1/llformer/111.json",
+    "bytes": 870,
+    "sha256": "6f2b702725e9d0c28d7c96cf8d1a61c348a07c9983500f26cc82cbdf97e00316"
+  },
+  {
+    "project_file": "results/m1/llformer/111.png",
+    "bytes": 374980,
+    "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c"
+  },
+  {
+    "project_file": "results/m1/retinexformer/111.json",
+    "bytes": 833,
+    "sha256": "6525cffee8082712dee907ea7d9d7e4d155e5312bba9bc78d43dbf99dcbb2edb"
+  },
+  {
+    "project_file": "results/m1/retinexformer/111.png",
+    "bytes": 320793,
+    "sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58"
+  },
+  {
+    "original_m1_audit": [
+      {
+        "source": "outputs/M1_REPORT.md",
+        "bytes": 13404,
+        "sha256": "2cff2d293b2f7af3d3a847e38ba6ff3e09f96e2c28f1aab8c18df99c276ac3c4"
+      },
+      {
+        "source": "outputs/docs/run_retinexformer.md",
+        "bytes": 4884,
+        "sha256": "c48621b2bd73ace37e2c006c0d0a16e6450a0098e37ddbd29a537da62f3593cb"
+      },
+      {
+        "source": "outputs/docs/run_llformer.md",
+        "bytes": 4488,
+        "sha256": "9eba0d4ee97eb2164c23287fc967ab7584b72b8b62fbfd279d8d5915064b37c1"
+      },
+      {
+        "source": "outputs/docs/infer_retinexformer.py",
+        "bytes": 3356,
+        "sha256": "78a907ff64dfb851157d791a2ee93b7370d15b636f797d8c6b75cdb454ddb0af"
+      },
+      {
+        "source": "outputs/docs/run_retinexformer.ps1",
+        "bytes": 785,
+        "sha256": "258628a5043571db7ec4cc34a86c88ff81b622a929555e6f8a6ecf96bc149be4"
+      },
+      {
+        "source": "outputs/docs/run_llformer.ps1",
+        "bytes": 737,
+        "sha256": "51e5e2c7fa286f3aaaae3a148c2bd3d1f5a5cb298c4f92d6f42c2fd52ac39f39"
+      },
+      {
+        "source": "outputs/patches/test_llformer_cpu.py",
+        "bytes": 4441,
+        "sha256": "6c7f58e1bc67e7f4103513e85d246ba9251b4bd8acaaa149f705220aba04c6bb"
+      },
+      {
+        "source": "outputs/patches/llformer_cpu.patch",
+        "bytes": 3695,
+        "sha256": "2e2d6eac6079f2ca7ac0f1f232af7e7a09979bbd5c0be50d5393fdcc6d01d584"
+      },
+      {
+        "source": "outputs/logs/retinexformer_infer.log",
+        "bytes": 1462,
+        "sha256": "7bd8b4f9717e28f6253a6889a8e098147b175689a3f94e4ce329cc91601984a9"
+      },
+      {
+        "source": "outputs/logs/llformer_infer.log",
+        "bytes": 675,
+        "sha256": "df82274516123da0cc68423ff080f52eeeac133c6c7c64512d964307df21d7d7"
+      },
+      {
+        "source": "outputs/samples/input/111.png",
+        "bytes": 318609,
+        "sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47"
+      },
+      {
+        "source": "outputs/retinexformer/111.png",
+        "bytes": 320793,
+        "sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58"
+      },
+      {
+        "source": "outputs/llformer/111.png",
+        "bytes": 374980,
+        "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c"
+      }
+    ],
+    "note": "Personal paths redacted; original M1 files unchanged; PNGs byte-identical."
+  }
+]

@@ -1,0 +1,1 @@
+All required deliverables exist and are nonempty. Root/output reports identical. Both official tracked source trees unchanged. LLFormer patch applies cleanly. PASS/PASS.

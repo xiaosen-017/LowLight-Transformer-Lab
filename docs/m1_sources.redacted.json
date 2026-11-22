@@ -1,0 +1,30 @@
+{
+  "workspace": "<M1_ROOT>",
+  "task_source": "<M1_ROOT>\\work\\M1_source.md",
+  "source_sha256": "5b36ba5e582ae27fc90cd749bcd3f8c0f22ecb9332fd5af690955327f7366556",
+  "repositories": {
+    "Retinexformer": {
+      "url": "https://github.com/caiyuanhao1998/Retinexformer.git",
+      "commit": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+      "tracked_files_modified": false
+    },
+    "LLFormer": {
+      "url": "https://github.com/TaoWangzj/LLFormer.git",
+      "commit": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+      "tracked_files_modified": false
+    }
+  },
+  "input": {
+    "path": "<M1_ROOT>\\outputs\\samples\\input\\111.png",
+    "sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+    "bytes": 318609,
+    "width": 600,
+    "height": 400,
+    "mode": "RGB"
+  },
+  "states": {
+    "Retinexformer": "PASS",
+    "LLFormer": "PASS"
+  },
+  "llformer_forward_seconds": 33.9998851
+}

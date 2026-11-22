@@ -1,0 +1,58 @@
+[
+  {
+    "name": "cycler",
+    "version": "0.11.0",
+    "files": 8,
+    "bytes": 32058,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "f0676b58075adfe4ca43d9d9066438ca3761e8a3e39cb4cdd29f4d34502c2545"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.38.0",
+    "files": 575,
+    "bytes": 6270056,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "231b1e93eb5cda674824e853a68a71505470254f03b3b903ffe019be7a2e2679"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.4.4",
+    "files": 11,
+    "bytes": 138151,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "f392c9a513f52fd7cc653815b23fcd5de0cc1bb9d524f5a5b7c0d8ea6bb81b3a"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.8.2",
+    "files": 44,
+    "bytes": 659191,
+    "source": "<USER_HOME>\\appdata\\roaming\\python\\python37\\site-packages",
+    "file_list_sha256": "492234ae1b69e698af852be03ed45d067bcc99cc29c33c0b6fab9eda67b1be93"
+  },
+  {
+    "name": "idna",
+    "version": "2.8",
+    "files": 10,
+    "bytes": 256442,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "969de9b3d52225265875fcadfe313fad7da2a62dfd47aa5153b6daaefaa43faa"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.5.3",
+    "files": 817,
+    "bytes": 23052648,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "229b50426f8f533c3089847fd74e55e1c3bb2e13a6751ec2b29950341c9ef859"
+  },
+  {
+    "name": "six",
+    "version": "1.12.0",
+    "files": 2,
+    "bytes": 32611,
+    "source": "<LEGACY_BASE>\\lib\\site-packages",
+    "file_list_sha256": "528a693012092b8fee23be9819d533412a9028e2d5b8501eaf21aa31d583245c"
+  }
+]

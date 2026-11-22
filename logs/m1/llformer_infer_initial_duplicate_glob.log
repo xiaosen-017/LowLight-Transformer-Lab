@@ -1,0 +1,13 @@
+torch: 1.13.1+cpu device: cpu threads: 4
+checkpoint fields: ['epoch', 'state_dict', 'optimizer']
+strict checkpoint load: <All keys matched successfully> state tensors: 1485
+weight_load_seconds: 0.49422740000000065
+restoring images......
+input: outputs/samples/input\111.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 36.470942799999996
+<M1_ROOT>\work\venvs\llformer37\lib\site-packages\skimage\util\dtype.py:135: UserWarning: Possible precision loss when converting from float32 to uint8
+  .format(dtypeobj_in, dtypeobj_out))
+1/2
+input: outputs/samples/input\111.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 37.802538
+2/2
+Files saved at outputs/llformer
+finish !

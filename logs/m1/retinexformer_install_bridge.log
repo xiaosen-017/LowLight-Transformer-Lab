@@ -1,0 +1,5 @@
+Looking in indexes: http://127.0.0.1:18763/simple
+Collecting torch==2.2.2
+  Downloading http://127.0.0.1:18763/https/files.pythonhosted.org/packages/5c/01/5ab75f138bf32d7a69df61e4997e24eccad87cc009f5fb7e2a31af8a4036/torch-2.2.2-cp311-cp311-win_amd64.whl.metadata (26 kB)
+Collecting torchvision==0.17.2
+  Downloading http://127.0.0.1:18763/https/files.pythonhosted.org/packages/c6/75/d869f600fc33df8b8ca99943e165a4ca23b73c68dc1942098fde0a6b46f3/torchvision-0.17.2-cp311-cp311-win_amd64.whl.metadata (6.6 kB)

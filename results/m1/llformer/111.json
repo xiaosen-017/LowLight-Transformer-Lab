@@ -1,0 +1,33 @@
+{
+  "model": "llformer",
+  "file": "<M1_ROOT>\\outputs\\llformer\\111.png",
+  "bytes": 374980,
+  "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+  "width": 600,
+  "height": 400,
+  "mode": "RGB",
+  "min": 8,
+  "max": 255,
+  "std": 43.85454031205808,
+  "mean_rgb_0_255": [
+    123.66561666666666,
+    125.414425,
+    126.68584583333333
+  ],
+  "mean_absolute_change_0_255": 105.64978888888889,
+  "black_pixels_fraction": 0.0,
+  "white_pixels_fraction": 0.0007625,
+  "device": "cpu",
+  "threads": 4,
+  "state_tensors": 1485,
+  "strict_load": "<All keys matched successfully>",
+  "forward_seconds": 33.9998851,
+  "weights_sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+  "input": "<M1_ROOT>\\outputs\\samples\\input\\111.png",
+  "padded_shape": [
+    1,
+    3,
+    400,
+    608
+  ]
+}

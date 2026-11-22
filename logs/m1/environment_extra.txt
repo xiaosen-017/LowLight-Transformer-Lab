@@ -1,0 +1,6 @@
+
+Name          : AMD Radeon (TM) Graphics
+AdapterRAM    : 536870912
+DriverVersion : 31.0.21912.2004
+
+existing torch 1.13.1+cpu cuda available False runtime None

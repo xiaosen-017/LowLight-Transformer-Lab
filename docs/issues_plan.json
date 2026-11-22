@@ -1,0 +1,137 @@
+[
+  {
+    "key": 1,
+    "title": "[M1] 整理 Retinexformer 复现说明、环境与推理结果",
+    "milestone": "M1",
+    "labels": [
+      "m1",
+      "documentation"
+    ],
+    "body": "## 目标\n\n官方commit/LOL-v1权重SHA可追溯；122个张量严格匹配；保留600×400真实输出、5.3681221秒历史记录、原成功/失败日志和独立环境说明。\n\n## 范围与状态\n\n本Issue归档M1已有成果；验收后可按实际证据关闭。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": true
+  },
+  {
+    "key": 2,
+    "title": "[M1] 整理 LLFormer 复现说明、环境与推理结果",
+    "milestone": "M1",
+    "labels": [
+      "m1",
+      "documentation"
+    ],
+    "body": "## 目标\n\n官方commit/LOL权重SHA可追溯；1485个张量严格匹配；保留600×400真实输出、33.9998851秒历史记录；CPU与Windows glob兼容diff和1/1日志齐全。\n\n## 范围与状态\n\n本Issue归档M1已有成果；验收后可按实际证据关闭。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": true
+  },
+  {
+    "key": 3,
+    "title": "[M1] 整合可重跑脚本、真实日志与权重获取说明",
+    "milestone": "M1",
+    "labels": [
+      "m1",
+      "documentation"
+    ],
+    "body": "## 目标\n\n两个参数化入口引用正确上游和权重，缺权重友好失败；历史日志脱敏且保留失败；新最小迁移smoke独立记录；无环境/权重/数据集入Git。\n\n## 范围与状态\n\n本Issue归档M1已有成果；验收后可按实际证据关闭。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": true
+  },
+  {
+    "key": 4,
+    "title": "[M2] 确定统一的 5–10 张测试图与图片来源",
+    "milestone": "M2",
+    "labels": [
+      "m2",
+      "documentation"
+    ],
+    "body": "## 目标\n\n登记同一批5–10张图的来源/使用范围、SHA、尺寸、GT情况；组员复核清单后冻结。不先批量推理。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 5,
+    "title": "[M2] 生成统一视觉对比图及定性观察记录",
+    "milestone": "M2",
+    "labels": [
+      "m2",
+      "experiment"
+    ],
+    "body": "## 目标\n\n依赖测试图清单冻结；同一输入/参数生成原图与两模型三列，必要时GT；逐图记录亮度、暗纹理、噪声、色偏、过曝、边缘伪影，图与日志可追溯。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 6,
+    "title": "[M3] 统一测试集与 PSNR/SSIM 评估协议",
+    "milestone": "M3",
+    "labels": [
+      "m3",
+      "documentation"
+    ],
+    "body": "## 目标\n\n确认LOL-v1等统一配对划分、匹配权重；冻结RGB范围、PSNR/SSIM库版本/窗口/边界、预处理、计时/资源方案；区分论文数字与实测。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 7,
+    "title": "[M3] 测量并分析两个模型的增强质量与推理效率",
+    "milestone": "M3",
+    "labels": [
+      "m3",
+      "experiment"
+    ],
+    "body": "## 目标\n\n依赖评估协议冻结；同硬件/输入/精度/线程执行，逐图PSNR/SSIM、重复计时及CPU内存/可用GPU显存；保存配置/CSV/失败，不把M1单次数字当性能结论。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 8,
+    "title": "[M3] 撰写两篇论文的方法对比与讨论",
+    "milestone": "M3",
+    "labels": [
+      "m3",
+      "documentation"
+    ],
+    "body": "## 目标\n\n分别讨论动机、光照引导/轴向注意力、跨层融合、复杂度和局限；每个实验主张对应本项目真实证据，论文指标注明来源与口径。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 9,
+    "title": "[M4] 建立 LLFormer 原始分块推理基线",
+    "milestone": "M4",
+    "labels": [
+      "m4",
+      "experiment",
+      "enhancement"
+    ],
+    "body": "## 目标\n\n只在后续执行：审查test_UHD.py默认720×1280、50%重叠和平均融合；区分B0原行为/B1覆盖与设备兼容；记录末端覆盖/shape/小图风险，先小图与固定权重，无训练。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n- docs/innovation_plan.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 10,
+    "title": "[M4] 实现加权重叠融合并进行正确性检查",
+    "milestone": "M4",
+    "labels": [
+      "m4",
+      "experiment",
+      "enhancement"
+    ],
+    "body": "## 目标\n\n只在后续执行：固定网格和网络，归一化正权重融合；外边界和Hann零端点处理明确；恒等/常数/单块/奇数/小图测试、覆盖率100%、权重和>0且无NaN，第二人复核。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n- docs/innovation_plan.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 11,
+    "title": "[M4] 完成分块大小/重叠率/融合策略消融实验",
+    "milestone": "M4",
+    "labels": [
+      "m4",
+      "experiment",
+      "enhancement"
+    ],
+    "body": "## 目标\n\n只在后续执行：A均值基线、B仅网格、C仅融合、D二者组合；固定数据/权重/硬件；参数开发与正式测试分开；质量、边缘、时间/峰值内存与失败齐全，再决定扩大分辨率。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n- docs/innovation_plan.md\n",
+    "completed_archive": false
+  },
+  {
+    "key": 12,
+    "title": "[M5] 汇总课程报告、展示图表与团队分工",
+    "milestone": "M5",
+    "labels": [
+      "m5",
+      "documentation"
+    ],
+    "body": "## 目标\n\n依赖真实M2–M4证据；≤3页技术报告、15分钟PPT和5分钟问答准备；方法分析、实验效果/局限、团队分工及论文/代码引用完整。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
+    "completed_archive": false
+  }
+]

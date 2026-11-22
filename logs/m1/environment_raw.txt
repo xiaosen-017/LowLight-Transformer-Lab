@@ -1,0 +1,164 @@
+**********************
+PowerShell transcript start
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+New-Item -ItemType Directory -Force -Path outputs\logs,outputs\environments,outputs\docs,outputs\patches,outputs\samples\input,outputs\retinexformer,outputs\llformer,work\repos,work\venvs | Out-Null
+Start-Transcript -Path outputs\logs\environment_raw.txt -Force
+Get-Date -Format o
+Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,OSArchitecture,TotalVisibleMemorySize,FreePhysicalMemory
+Get-CimInstance Win32_Processor | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors
+$PSVersionTable
+Get-Command python,py,conda,git,nvidia-smi,nvcc,wsl -ErrorAction Continue | Select-Object Name,Source
+python --version
+conda --version
+git --version
+git lfs version
+nvidia-smi
+nvcc --version
+python -c "import platform,sys,importlib.util; print(platform.platform(),platform.machine(),sys.executable); print('torch spec:',importlib.util.find_spec('torch'))"
+py -0p
+Get-CimInstance Win32_LogicalDisk -Filter 'DriveType=3' | Select-Object DeviceID,Size,FreeSpace
+wsl --status
+Stop-Transcript
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+OS: Microsoft Windows 10.0.22000
+Platform: Win32NT
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+**********************
+[transcript host metadata redacted]
+2026-11-23T00:04:02.7207377+08:00
+
+Caption                : Microsoft Windows 11 家庭中文版
+Version                : 10.0.22000
+OSArchitecture         : 64 位
+TotalVisibleMemorySize : 16057404
+FreePhysicalMemory     : 3096148
+
+Name                      : AMD Ryzen 5 5625U with Radeon Graphics
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+
+Key   : PSVersion
+Value : 7.6.9
+Name  : PSVersion
+
+Key   : PSEdition
+Value : Core
+Name  : PSEdition
+
+Key   : GitCommitId
+Value : 7.6.9
+Name  : GitCommitId
+
+Key   : OS
+Value : Microsoft Windows 10.0.22000
+Name  : OS
+
+Key   : Platform
+Value : Win32NT
+Name  : Platform
+
+Key   : PSCompatibleVersions
+Value : {1.0, 2.0, 3.0, 4.0…}
+Name  : PSCompatibleVersions
+
+Key   : PSRemotingProtocolVersion
+Value : 2.4
+Name  : PSRemotingProtocolVersion
+
+Key   : SerializationVersion
+Value : 1.1.0.1
+Name  : SerializationVersion
+
+Key   : WSManStackVersion
+Value : 3.0
+Name  : WSManStackVersion
+
+Get-Command: 
+Line |
+   8 |  Get-Command python,py,conda,git,nvidia-smi,nvcc,wsl -ErrorAction Cont …
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The term 'nvidia-smi' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Get-Command:
+Line |
+   8 |  Get-Command python,py,conda,git,nvidia-smi,nvcc,wsl -ErrorAction Cont …
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The term 'nvidia-smi' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Get-Command: 
+Line |
+   8 |  Get-Command python,py,conda,git,nvidia-smi,nvcc,wsl -ErrorAction Cont …
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The term 'nvcc' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Get-Command:
+Line |
+   8 |  Get-Command python,py,conda,git,nvidia-smi,nvcc,wsl -ErrorAction Cont …
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | The term 'nvcc' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Name   : python.exe
+Source : <LEGACY_BASE>\python.exe
+
+Name   : py.exe
+Source : <WINDOWS>\py.exe
+
+Name   : conda.exe
+Source : <LEGACY_BASE>\Scripts\conda.exe
+
+Name   : git.exe
+Source : <PROGRAM_FILES>\Git\cmd\git.exe
+
+Name   : wsl.exe
+Source : <WINDOWS>\system32\wsl.exe
+
+
+
+
+
+nvidia-smi: 
+Line |
+  13 |  nvidia-smi
+     |  ~~~~~~~~~~
+     | The term 'nvidia-smi' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+nvidia-smi:
+Line |
+  13 |  nvidia-smi
+     |  ~~~~~~~~~~
+     | The term 'nvidia-smi' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+nvcc: 
+Line |
+  14 |  nvcc --version
+     |  ~~~~
+     | The term 'nvcc' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+nvcc:
+Line |
+  14 |  nvcc --version
+     |  ~~~~
+     | The term 'nvcc' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+
+DeviceID  : C:
+Size      : 511002537984
+FreeSpace : 58762240000
+
+
+**********************
+PowerShell transcript end
+[transcript host metadata redacted]
+**********************

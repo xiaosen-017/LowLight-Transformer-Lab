@@ -1,0 +1,23 @@
+name: 阶段任务
+description: 可独立验收的复现、实验或文档任务
+title: "[M阶段] 简述任务"
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目标与依赖
+      description: 对应里程碑、相关Issue和必须先冻结的输入/协议。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 真实文件、日志、配置/哈希及复核人；未跑内容不得写完成。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 执行证据与限制
+      description: 命令、实际结果、失败及下一步；不要提交个人路径或凭据。

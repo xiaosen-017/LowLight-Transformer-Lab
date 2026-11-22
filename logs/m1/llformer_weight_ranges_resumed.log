@@ -1,0 +1,48 @@
+official Drive LOL model_bestPSNR.pth expected bytes 296109482 resume prefix 31916032
+GET byte range 0 39546880 64940213 attempt 1
+GET byte range 1 82884790 97964395 attempt 1
+GET byte range 2 108773740 130988577 attempt GET byte range1 
+3GET byte range 5 226859918 230061123 attempt 1
+GET byte range 4 194536152 197036941 attempt 1
+ 137820706 164012759 attempt 1
+GET byte range 7 265768186 296109481 attempt 1
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+GET byte range 5 226859918 230061123 attempt 2
+GET byte range 2 108773740 130988577 attempt 2
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+GET byte range 5 226859918 230061123 attempt 3
+range 4 retained verified bytes 33024182 curl exit 0
+verified range 4 33024182
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+GET byte range 2 108773740 130988577 attempt 3
+range 5 retained verified bytes 33024182 curl exit 0
+verified range 5 33024182
+range 1 retained verified bytes 33024182 curl exit 0
+verified range 1 33024182
+curl: (56) Failure when receiving data from the peer
+range 2 retained verified bytes 29206846 curl exit 56
+GET byte range 2 127171242 130988577 attempt 4
+curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed
+GET byte range 2 127171242 130988577 attempt 5
+curl: (56) Failure when receiving data from the peer
+range 7 retained verified bytes 22518139 curl exit 56
+GET byte range 7 285603445 296109481 attempt 2
+range 2 retained verified bytes 33024182 curl exit 0
+verified range 2 33024182
+curl: (56) Failure when receiving data from the peer
+range 3 retained verified bytes 31670767 curl exit 56
+GET byte range 3 162659345 164012759 attempt 2
+range 3 retained verified bytes 33024182 curl exit 0
+verified range 3 33024182
+curl: (56) Failure when receiving data from the peer
+range 0 retained verified bytes 30128883 curl exit 56
+GET byte range 0 62044915 64940213 attempt 2
+range 0 retained verified bytes 33024182 curl exit 0
+verified range 0 33024182
+curl: (56) Failure when receiving data from the peer
+range 7 retained verified bytes 32694703 curl exit 56
+GET byte range 7 295780009 296109481 attempt 3
+range 7 retained verified bytes 33024176 curl exit 0
+verified range 7 33024176
+COMPLETE <M1_ROOT>\work\model_bestPSNR.pth 296109482 SHA256 2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551

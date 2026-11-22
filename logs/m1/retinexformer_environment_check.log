@@ -1,0 +1,31 @@
+**********************
+PowerShell transcript start
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+$env:PYTHONNOUSERSITE='1'
+$env:PYTHONPATH=(Resolve-Path work/repos/Retinexformer).Path
+Start-Transcript outputs/logs/retinexformer_environment_check.log -Force
+work/venvs/retinexformer37/Scripts/python.exe -c "import sys,torch,torchvision,numpy,PIL,yaml,einops,basicsr; print('Python',sys.version,sys.executable); print('Torch',torch.__version__,'torchvision',torchvision.__version__,'numpy',numpy.__version__,'PIL',PIL.__version__,'yaml',yaml.__version__,'einops',einops.__version__); print('cuda',torch.cuda.is_available(),torch.version.cuda); print('origins',torch.__file__,torchvision.__file__,numpy.__file__,PIL.__file__); print('BasicSR namespace',list(basicsr.__path__)); print('sys.path',sys.path)"
+Stop-Transcript
+work/venvs/retinexformer37/Scripts/python.exe -u outputs/docs/infer_retinexformer.py --repo work/repos/Retinexformer --weights work/LOL_v1.pth --input outputs/samples/input/111.png --output outputs/retinexformer/111.png --threads 4 2>&1 | Tee-Object outputs/logs/retinexformer_infer.log
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+OS: Microsoft Windows 10.0.22000
+Platform: Win32NT
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+[transcript host metadata redacted]
+**********************
+[transcript host metadata redacted]
+
+**********************
+PowerShell transcript end
+[transcript host metadata redacted]
+**********************
