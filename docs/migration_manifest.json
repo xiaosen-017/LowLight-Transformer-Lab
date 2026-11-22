@@ -1,332 +1,398 @@
 [
   {
     "project_file": "environments/additional_package_copy_manifest.json",
-    "bytes": 1837,
-    "sha256": "d5768455374ea95139d1729b0b4e264f660e5efb364540283148208ac7145853"
+    "bytes_in_hash": 1780,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "3b87d592b6c7c47061e48c5b29204696d74e7ed8833f899dc132a78a88d76413"
   },
   {
     "project_file": "environments/llformer_freeze.txt",
-    "bytes": 506,
-    "sha256": "4e082fadb39a2067505c8c7f11c87c09c14cc704ea4673b95be1d8636f47a360"
+    "bytes_in_hash": 478,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "8a9ebac1c7804e470fe1145a509ff85115ec5f3f407a932d20b378cf9aacb75d"
   },
   {
     "project_file": "environments/llformer_runtime.redacted.json",
-    "bytes": 1548,
-    "sha256": "7de5f4a8b186ad76d05368c40067dbba6c5555fde2686232618b9f5c5985c76d"
+    "bytes_in_hash": 1509,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "741ed8acbf7413d73d9bdbc8f66a578cc8f14658a45a52c039af9f1e1873c415"
   },
   {
     "project_file": "environments/local_package_copy_manifest.json",
-    "bytes": 5342,
-    "sha256": "dd1a44c17672a1e981744760b3c0daa13fd711b57792b638e6b3cbdaa67cf3ca"
+    "bytes_in_hash": 5173,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "71bbec299fae1765db7bc3b432d082ea4f214b6c02d7b24f8ba315311f32a3aa"
   },
   {
     "project_file": "environments/README.md",
-    "bytes": 1333,
-    "sha256": "7e818bafe273fdd363302563217ae09239dda50a0fe5e7be8a1df72a224c7e88"
+    "bytes_in_hash": 1317,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "55039fd6175cb245e6552dd38be677a87ced12a897243b11a2acdb92ab66db5c"
   },
   {
     "project_file": "environments/requirements_cpu_py37.txt",
-    "bytes": 634,
-    "sha256": "aacd6c9d9b648e126d82a5b0b6986d714827351eb738011ce78443c09b58af1b"
+    "bytes_in_hash": 604,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "3d8a982a9099d2c87be41bde63e88a4f44970f5a379c1985b898d0ad88417f91"
   },
   {
     "project_file": "environments/retinexformer_freeze.txt",
-    "bytes": 506,
-    "sha256": "4e082fadb39a2067505c8c7f11c87c09c14cc704ea4673b95be1d8636f47a360"
+    "bytes_in_hash": 478,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "8a9ebac1c7804e470fe1145a509ff85115ec5f3f407a932d20b378cf9aacb75d"
   },
   {
     "project_file": "environments/retinexformer_runtime.redacted.json",
-    "bytes": 1598,
-    "sha256": "adc80d380dca43672aea67bd3e1227c1dcb0021598ff9b1cc5b1165ef76677d0"
+    "bytes_in_hash": 1559,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "775f2c711d13016591d79861f10a84d7ca875af931ed8f43188cb3ee0f60b650"
   },
   {
     "project_file": "logs/m1/checkpoint_integrity.json",
-    "bytes": 428,
-    "sha256": "01c8a25bf7f36fcfe74410e741eeddbb8a0ccd65ee00a304c50b24f86402f190"
+    "bytes_in_hash": 413,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "bb3ca645d5867ef75041194749553e88330d9aec485298c4398d59b3167d6114"
   },
   {
     "project_file": "logs/m1/deliverable_check.txt",
-    "bytes": 171,
-    "sha256": "a88f5c91ef46b202cd732544e20a42098e89896545bc5dd6a5600f14ac8ec82b"
+    "bytes_in_hash": 170,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "ad51ca3fbbcf046cfc9f2eb30282604127262010318b085e8ca60ba69cdca371"
   },
   {
     "project_file": "logs/m1/disk_after.txt",
-    "bytes": 71,
-    "sha256": "6ae71fe01f07f411d1dc112ba26ebfd4614e326ecee045df2ac48dbfedac56ac"
+    "bytes_in_hash": 66,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "63db75168aa0dc91d579edebed099939b18637f47a98042bcb13b10de95ca080"
   },
   {
     "project_file": "logs/m1/environment.txt",
-    "bytes": 2231,
-    "sha256": "1b9ee7a788c5b4775d99ca3ace541dc15f67c3bc2359293a5bf148cbed74cc89"
+    "bytes_in_hash": 2216,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "160c73c23d075d1cf835496f9e5ff9268bf97824d1713a77b91d87bf3ca4db65"
   },
   {
     "project_file": "logs/m1/environment_extra.txt",
-    "bytes": 167,
-    "sha256": "671e60200b4cff6ca042f58cabd7dcf1e5595dd141386cbac0a7617f3aa36ee1"
+    "bytes_in_hash": 161,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "4e6c770e49a8bd895d39e10cb084fee0db82eb103ca43ce50cec2b4a637d230a"
   },
   {
     "project_file": "logs/m1/environment_isolation_llformer.log",
-    "bytes": 1550,
-    "sha256": "37b52d4009e4a88983a1d8aaf2606a1ed2aedcc0c1cc3060a5e2dd84a48731d2"
+    "bytes_in_hash": 1510,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "115b30c3b45f879e6e973687723cb70ba1010ec44a8fb9dbe987b85d997e5397"
   },
   {
     "project_file": "logs/m1/environment_isolation_retinexformer.log",
-    "bytes": 1600,
-    "sha256": "422a09dc4b58b88b0eb85d64ef64c8a8a6344e9988229b5e7ab9bad8df12bd62"
+    "bytes_in_hash": 1560,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "07d86bd9b19e07601e6d5ab00dd117eee28abbd02b4780ea87f8fb0703db99c3"
   },
   {
     "project_file": "logs/m1/environment_raw.txt",
-    "bytes": 5915,
-    "sha256": "31d348f3dba6d6b29b4e2f5f68117b5b9c680bda5f83d1713e0d2a0348e01187"
+    "bytes_in_hash": 5751,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "8075a40d2e04c22e89490fb32829059bfe171a7dc4605de08a33e16fbe206079"
   },
   {
     "project_file": "logs/m1/install_strategy_change.txt",
-    "bytes": 238,
-    "sha256": "ae1dfe36fc4e772db1bacce788d78f1d046cd13ed35094103e7f44bed70e2b98"
+    "bytes_in_hash": 237,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "d419908f63b3275a9959bd74c108bcad108b20e4515a0b3d53247e0179960ebb"
   },
   {
     "project_file": "logs/m1/llformer_clone.log",
-    "bytes": 159,
-    "sha256": "ef1637fc7466c0331d5476c2a42b61638133cd7b2bd25a660b938652be26b89c"
+    "bytes_in_hash": 157,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "3446df35b85ab092f3e095f022aec419a049c441554acbde025022bb47ca7b4e"
   },
   {
     "project_file": "logs/m1/llformer_clone_proxy.log",
-    "bytes": 180,
-    "sha256": "9bf2b894edf9add9e20629c03f0c7ee7d8696d1ca0a213e877b875cdcd910707"
+    "bytes_in_hash": 178,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "b9faba5f6caa2f3cdba30cd995c700afe899861300584be0c12882c504d1c2d8"
   },
   {
     "project_file": "logs/m1/llformer_clone_proxy_retry.log",
-    "bytes": 37,
-    "sha256": "d9fae74cad6c286c62e29756b88f81174e5225dbb5b70ecb90a0697f9a3780dc"
+    "bytes_in_hash": 36,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "b5c05d849c09af09281a44882368d69dafdf161eee197a60e95bcae3c5ed3476"
   },
   {
     "project_file": "logs/m1/llformer_clone_proxy_schannel.log",
-    "bytes": 173,
-    "sha256": "863e9efed7428497b6bf5db50dc99187829854fb47cb887f4c9979596117222c"
+    "bytes_in_hash": 171,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "79b6ae40b400553dc11ad305d37145f25ea286f983a2b7cfcd391a93eb8317cd"
   },
   {
     "project_file": "logs/m1/llformer_clone_retry.log",
-    "bytes": 162,
-    "sha256": "39414ee9b673b425a741ae4bdd198cbcba5584bd70ee7d00ca3cf50db959742b"
+    "bytes_in_hash": 160,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "e8731c2121154b93317e53e50690673f9aa23d39ee31e26cb224b146521302f2"
   },
   {
     "project_file": "logs/m1/llformer_download_parts_manifest.json",
-    "bytes": 1258,
-    "sha256": "05da2746d6cb6cf0fa47baeb1cbffb84f843aafdacd11e789944bd9673058059"
+    "bytes_in_hash": 1212,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "6f15140b305f864422edd6562dae2549a7988ac72bcb4734f8abae70fae02c45"
   },
   {
     "project_file": "logs/m1/llformer_environment_check.log",
-    "bytes": 515,
-    "sha256": "48bdcfca6467ebe891d266104e735caa77b7287bebd21034d3e6dbd1229d0daf"
+    "bytes_in_hash": 511,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "6c2df01e477b95e6d573bf66819fe73a2ec7429804cd349ab4c16b86ceae7f5a"
   },
   {
     "project_file": "logs/m1/llformer_infer.log",
-    "bytes": 604,
-    "sha256": "dd32db2cb2ddcf03dcf23d42a3f56af97e866a74bd7d78c52ca1bee6ab2cad5b"
+    "bytes_in_hash": 593,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9843dd9c0902e6c4cfa0461ea789c24643cd0219a5e358a208a1920c4b6a1812"
   },
   {
     "project_file": "logs/m1/llformer_infer_initial_duplicate_glob.log",
-    "bytes": 740,
-    "sha256": "c85220e16b108a15febbaa73d7423579bd4362d18abe2e4f064cbbd70896ea97"
+    "bytes_in_hash": 727,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "4bf875c6734543b48c5abbaf852cc674a269bd035a615a23208a42e83c20d266"
   },
   {
     "project_file": "logs/m1/llformer_install.log",
-    "bytes": 407,
-    "sha256": "b064d3ad530f1a6547220275ea94ccd66dea9565b69cc363673e2cce063e81ae"
+    "bytes_in_hash": 402,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "36c53269497fcbdff05451eb9752536a5ebca8a0afd52717acbbcce10fa46c7d"
   },
   {
     "project_file": "logs/m1/llformer_models_discovery.log",
-    "bytes": 154,
-    "sha256": "18c1c40d131d78741188274b39f4876cb731581b90aedde4ea58ebc59f147fae"
+    "bytes_in_hash": 152,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "1d36735ee6bbb48f6c66758d10ce767d6b03d3658380b971e9ef5eff11381f95"
   },
   {
     "project_file": "logs/m1/llformer_original_cpu_failure.log",
-    "bytes": 1059,
-    "sha256": "90bcfafd6a4a89c427b30aa1fe4c12ad2f049893a946742eee0e44acd4ee7f5c"
+    "bytes_in_hash": 1043,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "baaa6a17c0671138d650a7eac2f0bc1b4abc49d79621e14a1a46293f7ce9e6cf"
   },
   {
     "project_file": "logs/m1/llformer_pip_check.log",
-    "bytes": 122,
-    "sha256": "20b4778d64573b023c5800d06096d2798175adbb955b40bf9a6e53276fb76ed2"
+    "bytes_in_hash": 120,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "2693ee1912ace3a77cbc912b6dfc1c3f889ba390dfc1af430b64cbc91064fcef"
   },
   {
     "project_file": "logs/m1/llformer_pip_check_final.log",
-    "bytes": 31,
-    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    "bytes_in_hash": 30,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
   },
   {
     "project_file": "logs/m1/llformer_rerun_20261123_003411.log",
-    "bytes": 604,
-    "sha256": "dd32db2cb2ddcf03dcf23d42a3f56af97e866a74bd7d78c52ca1bee6ab2cad5b"
+    "bytes_in_hash": 593,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9843dd9c0902e6c4cfa0461ea789c24643cd0219a5e358a208a1920c4b6a1812"
   },
   {
     "project_file": "logs/m1/llformer_source_download.log",
-    "bytes": 642,
-    "sha256": "b8967b89df1cfa52f41f96d60eaf5db7444bcdcda12338e864e2576d91481b1a"
+    "bytes_in_hash": 633,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "c94db99a80e259acae63897f8c8026c26338cde4a7e94bd0467f16c387d5dc70"
   },
   {
     "project_file": "logs/m1/llformer_weight_discovery.log",
-    "bytes": 5631,
-    "sha256": "758e618fd5a0eaa3d437a30a098928d24e420672ba7adc7dbd211a1979fb8fa1"
+    "bytes_in_hash": 5558,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "6701fef3e3f3315bc639aca99150d8568682283c499e1850758bccddfe60c6ad"
   },
   {
     "project_file": "logs/m1/llformer_weight_discovery_proxy.log",
-    "bytes": 77,
-    "sha256": "02cc3f79b4819380d4d9ad84ccebec3ae81d452614e8cfdeccc7a80e05fedfb7"
+    "bytes_in_hash": 76,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "f27887ca1286d642ae12e1722a9d368dc0a8035d05fbeac22174ffe880323939"
   },
   {
     "project_file": "logs/m1/llformer_weight_download_confirmed.log",
-    "bytes": 77,
-    "sha256": "02cc3f79b4819380d4d9ad84ccebec3ae81d452614e8cfdeccc7a80e05fedfb7"
+    "bytes_in_hash": 76,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "f27887ca1286d642ae12e1722a9d368dc0a8035d05fbeac22174ffe880323939"
   },
   {
     "project_file": "logs/m1/llformer_weight_ranges.log",
-    "bytes": 975,
-    "sha256": "9e3de978daecc33b498e0f36cc6785302ee2cb520776f9287624bb05ba24c015"
+    "bytes_in_hash": 956,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "0a4b384e189392d850dec9daf915a17f4daa0b28553042295d3757b4480b8452"
   },
   {
     "project_file": "logs/m1/llformer_weight_ranges_resumed.log",
-    "bytes": 2520,
-    "sha256": "dd8fc7b5e9941574011af4f1b460fa3e9b6f6919aecf500bec28a27605015115"
+    "bytes_in_hash": 2472,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "808306e2511b2307fb4373ca7f69363b15ebb2988ddd13baead43649fa935b21"
   },
   {
     "project_file": "logs/m1/local_package_copy.log",
-    "bytes": 491,
-    "sha256": "7924b1e7dbeb957658b80af1a28eb4b36794affa714ea6caea33dd24f811ae5a"
+    "bytes_in_hash": 473,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "3361df6aaf9a3df4a86e9dc87d55b8eb26b1fee8cf051c02ecf0b3733fb70c62"
   },
   {
     "project_file": "logs/m1/local_package_copy_active.log",
-    "bytes": 1857,
-    "sha256": "f6a50d3f0bacfe1e690ed24f44d81089dbc6cf24b84f3f01d53280ce05f06515"
+    "bytes_in_hash": 1825,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "7dcb1625d1d23cfc7365cb0cf4a7ba6432edfd879090c3e7cc4c0920eceec7eb"
   },
   {
     "project_file": "logs/m1/local_package_copy_additional.log",
-    "bytes": 270,
-    "sha256": "e91269d0c4129b295357f292ba21e0292eefdedcc7f24e7b51d1c73c1ca627b6"
+    "bytes_in_hash": 262,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "d98b48499e900cc68251584c9f70b0a932889b1e68194c99f31849aa6a722dca"
   },
   {
     "project_file": "logs/m1/output_validation.json",
-    "bytes": 1119,
-    "sha256": "78ae862f40b1ae304fc73762b4b85c3c139d4477a582779867a13fb68ec6af1c"
+    "bytes_in_hash": 1078,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "5d2e25e4ffe5ddf17eb90dd8dfb989ba0fd39d05a219ebf4f5c9b4cfd3f4841a"
   },
   {
     "project_file": "logs/m1/output_validation.log",
-    "bytes": 1121,
-    "sha256": "dafccc0cc9c39fa65f508ff5b522b6bbdd3fa371717cea7e7b08222219f18749"
+    "bytes_in_hash": 1079,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "722a9aefd1c5e4b491be4ec8d13f9cc54f49ea9bcaeeb7ff8ef11372b06766b8"
   },
   {
     "project_file": "logs/m1/pip_curl_bridge.log",
-    "bytes": 1041,
-    "sha256": "bb798b478c1ed63a4b73a8b2492a4128827fe263774018960d259ee19b1b1f70"
+    "bytes_in_hash": 1032,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9757ffd765d5bc4138812bccd84ebfa3510303f67aca717b3501895ff99b9d57"
   },
   {
     "project_file": "logs/m1/retinexformer_clone.log",
-    "bytes": 174,
-    "sha256": "d46314e7fa07c50c9f01ef9bbf5e5fd5b6c9d20c080659d24d368b3662a7dd0f"
+    "bytes_in_hash": 172,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "b2d06e48e59cc08a9aca7dcf15e0b5661591d57cc2e13bd036a278893831da86"
   },
   {
     "project_file": "logs/m1/retinexformer_clone_proxy.log",
-    "bytes": 42,
-    "sha256": "0be0529ef86ec7d640f64fee37d5d12165193192fdd5e8094ef8106bbd1a2216"
+    "bytes_in_hash": 41,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9547f5a35bfc31a9dff6207b830db5bd96985c352552bbcb120594f856959044"
   },
   {
     "project_file": "logs/m1/retinexformer_clone_retry.log",
-    "bytes": 177,
-    "sha256": "fbdaff4f70f14612349137913696b65ca2066d3a774b98bd1855a6d5f1b45cab"
+    "bytes_in_hash": 175,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "a599691b36745cbfe37b0ed231fee2c17085d67a1ddbcae93106644fdb6958c1"
   },
   {
     "project_file": "logs/m1/retinexformer_environment_check.log",
-    "bytes": 1815,
-    "sha256": "c46ad1e41bcdab73272bfa418bd4ebae01e3205b0ed6851ad52d5b280c35cf1b"
+    "bytes_in_hash": 1784,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "49dee72f12e842514e43922a22618b62b25048a4665ff30b4aa87cb05a356ea2"
   },
   {
     "project_file": "logs/m1/retinexformer_infer.log",
-    "bytes": 1237,
-    "sha256": "7f050ba2e84c95f0b819e34e6a9a67b343c9d7e344b6d45572bcd87ece61d0aa"
+    "bytes_in_hash": 1198,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "e0e4092ae15a280b5aa742c65d2ed7ef48bcf154ead6c06eca6857485030ccd8"
   },
   {
     "project_file": "logs/m1/retinexformer_install.log",
-    "bytes": 407,
-    "sha256": "b064d3ad530f1a6547220275ea94ccd66dea9565b69cc363673e2cce063e81ae"
+    "bytes_in_hash": 402,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "36c53269497fcbdff05451eb9752536a5ebca8a0afd52717acbbcce10fa46c7d"
   },
   {
     "project_file": "logs/m1/retinexformer_install_bridge.log",
-    "bytes": 512,
-    "sha256": "057dc4e0c4f79809ef4e12737579640c3deb399fc1ec1479f16717454c11e28e"
+    "bytes_in_hash": 507,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "c6c9eb34cdaca00d15d4ab0f4341fc42526cc74011339e02e0a31cddd31d8380"
   },
   {
     "project_file": "logs/m1/retinexformer_install_cpu.log",
-    "bytes": 1248,
-    "sha256": "c6c2305c274daaed7b9cd3de218f3dc261539942608b822587ad008913d9589f"
+    "bytes_in_hash": 1239,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "afdd2a7688a98b3090fa080d132f7bca22ed0f0a3f865f33780b566a02209374"
   },
   {
     "project_file": "logs/m1/retinexformer_install_proxy.log",
-    "bytes": 2356,
-    "sha256": "25ca8c425d2a3206c1d44065569834fd6f84a0ce02ea74bb1667ff4d6232f9e0"
+    "bytes_in_hash": 2324,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "30db6d278869a3841d3e64cc62ce26f037232916ca6845facece69452ba4c81f"
   },
   {
     "project_file": "logs/m1/retinexformer_install_pypi.log",
-    "bytes": 956,
-    "sha256": "41ac46b8c40a1e2d6f3bf339afea11cdb2ba491158fdefc0ee7ba88068e17612"
+    "bytes_in_hash": 949,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "7735a2df771f1e40f20de6ba3a3c5e131dedc8ad84675889b22baa970f7d6342"
   },
   {
     "project_file": "logs/m1/retinexformer_pip_check.log",
-    "bytes": 122,
-    "sha256": "20b4778d64573b023c5800d06096d2798175adbb955b40bf9a6e53276fb76ed2"
+    "bytes_in_hash": 120,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "2693ee1912ace3a77cbc912b6dfc1c3f889ba390dfc1af430b64cbc91064fcef"
   },
   {
     "project_file": "logs/m1/retinexformer_pip_check_final.log",
-    "bytes": 31,
-    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    "bytes_in_hash": 30,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
   },
   {
     "project_file": "logs/m1/retinexformer_weight_download.log",
-    "bytes": 5625,
-    "sha256": "3a6a6bb17186fae34c38c57dde921c5c90e4ca72a006009e3c75e47c30c660df"
+    "bytes_in_hash": 5552,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "aaa02ec804f75eadf0cabd2ec1d03d7f61951a5b5b1e1ba62f0883b4319032ca"
   },
   {
     "project_file": "logs/m1/small_dependencies_download.log",
-    "bytes": 682,
-    "sha256": "c6368d2f2112a9eb3e6190ae5da574ba5c8f719157e3dd6386addd368a93d966"
+    "bytes_in_hash": 673,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "0e16cb8fff657d700f64bb5b5668e3714a50b7b93ea9a0d4e3b06ede82b0caad"
   },
   {
     "project_file": "logs/m1/torch_wheel_curl.log",
-    "bytes": 103,
-    "sha256": "f447fb8a7ed2a15e85440fe53ae967bd191a5c6db49536fffa417f3b48566ca7"
+    "bytes_in_hash": 102,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "3d09bcdc7b6378b1a1616819e0850fdc7ab5cb1a591aaeacf91d6f9503ada625"
   },
   {
     "project_file": "logs/migration/llformer_smoke.log",
-    "bytes": 674,
-    "sha256": "b2ae5d17fe0238c217dbf3f746b07e49eb92e5580b49418a935d458293742be5"
+    "bytes_in_hash": 663,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "73ff8001f95b4c3b0a251627b5ff916d39fb67112e3e24cd184a8afafac4f207"
   },
   {
     "project_file": "logs/migration/retinexformer_smoke.log",
-    "bytes": 1267,
-    "sha256": "194c4c62f6daa89e008f4cbf7689d7d47da8b2db49a4caaa6f4a0d23f68c4bce"
+    "bytes_in_hash": 1228,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "4456f3d5ffaf5b1107d59bdc45c4bbb24b096c97107cfc39fc03cdfdae9f7673"
   },
   {
     "project_file": "logs/README.md",
-    "bytes": 982,
-    "sha256": "f272313b808a45f925c0959cc18021cdeef33ec6c47b7cddf5a7a22ebb67c71e"
+    "bytes_in_hash": 975,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "be667071e7bc77fe3c96e11cdd70783bb7dcf67da0c592a8934fba668eccf61a"
   },
   {
     "project_file": "results/m1/llformer/111.json",
-    "bytes": 870,
-    "sha256": "6f2b702725e9d0c28d7c96cf8d1a61c348a07c9983500f26cc82cbdf97e00316"
+    "bytes_in_hash": 838,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "ed3e3678d96b322d7e64e77717c1ea55c782db83787cbd7409fb1dc9b1084462"
   },
   {
     "project_file": "results/m1/llformer/111.png",
-    "bytes": 374980,
+    "bytes_in_hash": 374980,
+    "hash_mode": "binary",
     "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c"
   },
   {
     "project_file": "results/m1/retinexformer/111.json",
-    "bytes": 833,
-    "sha256": "6525cffee8082712dee907ea7d9d7e4d155e5312bba9bc78d43dbf99dcbb2edb"
+    "bytes_in_hash": 800,
+    "hash_mode": "canonical_lf_text",
+    "sha256": "54d8ddb9b5463c9688c83e871aa3409ba18c72fad67e4c9d1f827f973340237c"
   },
   {
     "project_file": "results/m1/retinexformer/111.png",
-    "bytes": 320793,
+    "bytes_in_hash": 320793,
+    "hash_mode": "binary",
     "sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58"
   },
   {
@@ -397,6 +463,6 @@
         "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c"
       }
     ],
-    "note": "Personal paths redacted; original M1 files unchanged; PNGs byte-identical."
+    "note": "Original file hashes are byte hashes. Migrated text hashes normalize CRLF to LF for cross-platform Git checkout; PNGs stay byte-identical."
   }
 ]
