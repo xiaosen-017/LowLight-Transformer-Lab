@@ -1,0 +1,140 @@
+{
+  "repository": "xiaosen-017/LowLight-Transformer-Lab",
+  "issues": [
+    {
+      "key": 1,
+      "number": 1,
+      "title": "[M1] 整理 Retinexformer 复现说明、环境与推理结果",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/1",
+      "state": "closed",
+      "milestone": "M1"
+    },
+    {
+      "key": 2,
+      "number": 2,
+      "title": "[M1] 整理 LLFormer 复现说明、环境与推理结果",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/2",
+      "state": "closed",
+      "milestone": "M1"
+    },
+    {
+      "key": 3,
+      "number": 3,
+      "title": "[M1] 整合可重跑脚本、真实日志与权重获取说明",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/3",
+      "state": "closed",
+      "milestone": "M1"
+    },
+    {
+      "key": 4,
+      "number": 4,
+      "title": "[M2] 确定统一的 5–10 张测试图与图片来源",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/4",
+      "state": "open",
+      "milestone": "M2"
+    },
+    {
+      "key": 5,
+      "number": 5,
+      "title": "[M2] 生成统一视觉对比图及定性观察记录",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/5",
+      "state": "open",
+      "milestone": "M2"
+    },
+    {
+      "key": 6,
+      "number": 6,
+      "title": "[M3] 统一测试集与 PSNR/SSIM 评估协议",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/6",
+      "state": "open",
+      "milestone": "M3"
+    },
+    {
+      "key": 7,
+      "number": 7,
+      "title": "[M3] 测量并分析两个模型的增强质量与推理效率",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/7",
+      "state": "open",
+      "milestone": "M3"
+    },
+    {
+      "key": 8,
+      "number": 8,
+      "title": "[M3] 撰写两篇论文的方法对比与讨论",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/8",
+      "state": "open",
+      "milestone": "M3"
+    },
+    {
+      "key": 9,
+      "number": 9,
+      "title": "[M4] 建立 LLFormer 原始分块推理基线",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/9",
+      "state": "open",
+      "milestone": "M4"
+    },
+    {
+      "key": 10,
+      "number": 10,
+      "title": "[M4] 实现加权重叠融合并进行正确性检查",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/10",
+      "state": "open",
+      "milestone": "M4"
+    },
+    {
+      "key": 11,
+      "number": 11,
+      "title": "[M4] 完成分块大小/重叠率/融合策略消融实验",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/11",
+      "state": "open",
+      "milestone": "M4"
+    },
+    {
+      "key": 12,
+      "number": 12,
+      "title": "[M5] 汇总课程报告、展示图表与团队分工",
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/12",
+      "state": "open",
+      "milestone": "M5"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "M1",
+      "number": 1,
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/1"
+    },
+    {
+      "title": "M2",
+      "number": 2,
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/2"
+    },
+    {
+      "title": "M3",
+      "number": 3,
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/3"
+    },
+    {
+      "title": "M4",
+      "number": 4,
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/4"
+    },
+    {
+      "title": "M5",
+      "number": 5,
+      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/5"
+    }
+  ],
+  "repository_url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab",
+  "visibility": "PRIVATE",
+  "initial_commit": "425333015bcf7875143ddc0d81f161a488485a09",
+  "branch_protection": {
+    "enabled": false,
+    "detail": "gh: Upgrade to GitHub Pro or make this repository public to enable this feature. (HTTP 403)"
+  },
+  "project_board": {
+    "created": false,
+    "detail": "error: your authentication token is missing required scopes [read:project]\nTo request it, run:  gh auth refresh -s read:project",
+    "fallback": "Issues + Milestones created; no extra account scopes requested."
+  }
+}

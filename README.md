@@ -2,6 +2,8 @@
 
 **基于 Transformer 的低光照图像增强：复现、对比与推理优化**。课程：多媒体分析与理解；主题：Transformer Models in CV；三人团队私有协作项目。
 
+仓库：[https://github.com/xiaosen-017/LowLight-Transformer-Lab](https://github.com/xiaosen-017/LowLight-Transformer-Lab) · [全部阶段 Issues](https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues?q=is%3Aissue) · [里程碑](https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestones?state=all) · [建仓验收与平台限制](docs/github_setup.md)。
+
 **M1 PASS (single-image inference on CPU)**。M2 / M3 / M4 / M5：**TODO**。两张真实图已在本机加载作者权重并推理，不代表论文全量指标复现。5.37 秒与 34.00 秒仅为历史运行记录，不能直接用作正式速度基准。
 
 | 论文 / 官方实现 | M1 固定 commit | 方法重点 |
@@ -25,7 +27,7 @@
 ## 快速开始
 
 ```powershell
-git clone <本私有仓库URL>
+git clone https://github.com/xiaosen-017/LowLight-Transformer-Lab.git
 cd LowLight-Transformer-Lab
 ./scripts/setup_upstreams.ps1
 # 分别按两份运行说明准备独立环境和官方权重，然后：
