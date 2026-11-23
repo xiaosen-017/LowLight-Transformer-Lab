@@ -1,0 +1,80 @@
+{
+  "experiment": "M2 visual demonstration",
+  "selection": "All five images bundled with the pinned official demo; natural filename order; no post-inference selection",
+  "dataset_source": "https://daooshee.github.io/BMVC2018website/",
+  "upstream_commit": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+  "samples": [
+    {
+      "name": "22.png",
+      "upstream_path": "demo/examples/22.png",
+      "sha256": "7cf9d3f9ac01336c6249afd2ea5389e6bf588df7f27eb3cf5124e6f0394e30b6",
+      "width": 600,
+      "height": 400,
+      "mode": "RGB",
+      "split": "LOL-v1 test/low",
+      "source": "Retinexformer official demo bundled examples",
+      "usage": "private group non-commercial academic visual study; credits to LOL dataset authors"
+    },
+    {
+      "name": "111.png",
+      "upstream_path": "demo/examples/111.png",
+      "sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+      "width": 600,
+      "height": 400,
+      "mode": "RGB",
+      "split": "LOL-v1 test/low",
+      "source": "Retinexformer official demo bundled examples",
+      "usage": "private group non-commercial academic visual study; credits to LOL dataset authors"
+    },
+    {
+      "name": "146.png",
+      "upstream_path": "demo/examples/146.png",
+      "sha256": "6a955842b2f8dde700487973958ee1f99c43123764d579744b2ff517fac5870e",
+      "width": 600,
+      "height": 400,
+      "mode": "RGB",
+      "split": "LOL-v1 test/low",
+      "source": "Retinexformer official demo bundled examples",
+      "usage": "private group non-commercial academic visual study; credits to LOL dataset authors"
+    },
+    {
+      "name": "493.png",
+      "upstream_path": "demo/examples/493.png",
+      "sha256": "d196959186cb53980d2138ef13a5dd18840e613c0296c6c7b9a720fde3e0a37d",
+      "width": 600,
+      "height": 400,
+      "mode": "RGB",
+      "split": "LOL-v1 test/low",
+      "source": "Retinexformer official demo bundled examples",
+      "usage": "private group non-commercial academic visual study; credits to LOL dataset authors"
+    },
+    {
+      "name": "778.png",
+      "upstream_path": "demo/examples/778.png",
+      "sha256": "26667c53ff5d97a794c3bfed729a6fb88ed5298e834787b28a21852853a2e830",
+      "width": 600,
+      "height": 400,
+      "mode": "RGB",
+      "split": "LOL-v1 test/low",
+      "source": "Retinexformer official demo bundled examples",
+      "usage": "private group non-commercial academic visual study; credits to LOL dataset authors"
+    }
+  ],
+  "preprocessing": {
+    "resize": false,
+    "crop": false,
+    "input_gamma": 1.0,
+    "output_brightness": 1.0,
+    "self_ensemble": false,
+    "GT_mean": false,
+    "precision": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "output": "RGB PNG at original resolution"
+  },
+  "weights_config": "configs/weights.json",
+  "entrypoints": [
+    "scripts/infer_retinexformer.py",
+    "patches/test_llformer_cpu.py"
+  ]
+}
