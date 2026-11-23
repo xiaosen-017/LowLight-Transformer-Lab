@@ -40,7 +40,7 @@
 
 **本轮设置**：官方LOL-v1匹配权重、CPU、float32、4线程；原尺寸输入、Gamma=1、输出亮度=1、自集成关闭。Retinexformer按4倍数padding，LLFormer按16倍数padding后裁回原尺寸。10张增强结果均保存为无损PNG。
 
-五张输入来自LOL-v1测试集，来源为固定Retinexformer官方commit的 `demo/examples/`。总览按统一比例缩小用于网页展示；`results/m2/figures/` 保存600像素宽单列的逐图对照，`results/m2/retinexformer/` 与 `results/m2/llformer/` 保存原始增强结果。图片版权归原数据集作者，本项目用于私有组内学术研究。
+五张输入来自LOL-v1测试集，来源为固定Retinexformer官方commit的 `demo/examples/`。总览按统一比例缩小用于网页展示；`results/m2/figures/` 保存600像素宽单列的逐图对照，`results/m2/retinexformer/` 与 `results/m2/llformer/` 保存原始增强结果。图片版权归原数据集作者，本项目用于低光照增强方法的学术研究与效果展示。
 
 ## 研究路线与阶段验收
 
@@ -112,6 +112,15 @@ py -3.7 -m venv .venvs/llformer
 ```
 
 已有环境和权重可通过参数直接引用。M2脚本提供 `-RetPython`、`-LLPython`、`-RetUpstream`、`-LLUpstream`、`-RetWeights`、`-LLWeights`；单图入口提供 `-PythonExe`、`-Upstream`、`-Weights`、`-InputPath`。新运行输出保存在 `runs/`，归档结果保存在 `results/`。
+
+## 协作流程
+
+1. 组员将GitHub用户名发给仓库所有者，接受Collaborator邀请。
+2. 从最新main创建自己的功能/实验分支，完成修改并推送该分支。
+3. 创建目标为main的Pull Request，写明改动、运行命令、实际结果和对应Issue。
+4. 仓库所有者xiaosen-017审核，确认后使用Squash and merge合并，并删除已合并分支。
+
+main使用PR审核规则，代码所有者为xiaosen-017。权重、完整数据集、环境与运行缓存按现有.gitignore保存在本地。
 
 ## 项目目录
 

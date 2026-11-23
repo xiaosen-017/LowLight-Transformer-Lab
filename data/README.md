@@ -4,10 +4,10 @@
 
 原数据集：[Deep Retinex Decomposition for Low-Light Enhancement (BMVC 2018)](https://daooshee.github.io/BMVC2018website/)。[作者附带示例归属说明](../docs/source_materials/LOL_example_attribution.md) 已归档。
 
-为避免给未明确再分发授权的原始图片新增拷贝，本仓库不提交输入图片或完整数据集；运行 `scripts/setup_upstreams.ps1` 后脚本默认读取官方克隆自带的该样例。两张已有增强输出按本次授权仅放在私有组内研究档案中，保留数据来源，不授予这些图像新的通用再分发许可，转公开前需单独核实权利。
+为避免给未明确再分发授权的原始图片新增拷贝，本仓库不提交输入图片或完整数据集；运行 `scripts/setup_upstreams.ps1` 后脚本默认读取官方克隆自带的该样例。增强输出和对照图用于非商业学术研究展示，保留数据来源；代码许可不重新授权原始图像。
 
 M2 先登记 5–10 张图片的来源、使用范围、哈希和尺寸，再批量运行。M3 记录官方测试划分、匹配 GT 和统一协议；输入、GT 和生成结果使用不同目录，不能把增强输出误作输入。所有新增数据放在被忽略的 data/ 下，在实验清单记录可再获取路径，禁止上传私有照片或完整数据集。
 
 ## M2五图展示
 
-已使用官方demo的全部五张LOL-v1测试图，来源/文件SHA见configs/m2_samples.json。原始输入PNG继续从官方上游获取；三列对照面板包含原图和两模型输出，用于本Private项目组内学术展示。M2原始增强PNG、对照面板与总览保存在results/m2/。
+已使用官方demo的全部五张LOL-v1测试图，来源/文件SHA见configs/m2_samples.json。原始输入PNG继续从官方上游获取；三列对照面板包含原图和两模型输出，用于本项目的非商业学术研究展示。M2原始增强PNG、对照面板与总览保存在results/m2/。

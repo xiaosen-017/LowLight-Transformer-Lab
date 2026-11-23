@@ -1,6 +1,6 @@
 # GitHub项目状态
 
-仓库：https://github.com/xiaosen-017/LowLight-Transformer-Lab；Private；main。
+仓库：https://github.com/xiaosen-017/LowLight-Transformer-Lab；Public；main。
 
 ## 里程碑
 
@@ -33,6 +33,6 @@
 
 Issues开启，wiki关闭；允许Squash/Rebase，合并后自动删除功能分支。PR模板记录目的、修改、复现命令、实际结果与关联Issue，成员按Issue认领并交叉复核。
 
-分支保护未启用：GitHub对当前Private仓库返回计划限制（HTTP403）；仓库继续保持Private，按团队review流程合并。Projects缺少read:project授权，当前使用Issues和Milestones管理任务。
+main已配置1次批准、代码所有者审核、撤销过期批准、解决讨论、禁止force-push与删除。管理员保留管理例外。代码所有者为xiaosen-017，规则见.github/CODEOWNERS。Projects仍使用已有Issues和Milestones进行任务管理。
 
 CLI凭据保存在系统keyring，仓库内无Token。原M1目录/环境/权重未移动或修改；M2结果与运行记录见README和docs/M2_REPORT.md。
