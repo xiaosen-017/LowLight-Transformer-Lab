@@ -7,3 +7,7 @@
 Private仓库已创建并成功推送main，12个Issues、5个Milestones、9个阶段/类型标签已建立。M1的3个归档Issue及M1 Milestone关闭，其他任务OPEN/TODO。分支保护与可选Projects未启用，确切平台原因见 github_setup.md；未更改Private属性。
 
 M1已归档；M2、M3、M4、M5均未执行。等待另外两位真实GitHub用户名后再邀请/分配，不猜测账号。
+
+## M2后续进展
+
+建仓之后已完成M2：5张统一输入、10张增强结果、三列对照图和逐图观察，详见README及docs/M2_REPORT.md。上文保留建仓时点的验收快照。M3/M4/M5待开展。

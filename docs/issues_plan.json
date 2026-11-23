@@ -41,7 +41,9 @@
       "documentation"
     ],
     "body": "## 目标\n\n登记同一批5–10张图的来源/使用范围、SHA、尺寸、GT情况；组员复核清单后冻结。不先批量推理。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
-    "completed_archive": false
+    "completed_archive": false,
+    "status": "completed",
+    "evidence": "docs/M2_REPORT.md; configs/m2_samples.json; results/m2/; experiments/m2_visual/observations.csv"
   },
   {
     "key": 5,
@@ -52,7 +54,9 @@
       "experiment"
     ],
     "body": "## 目标\n\n依赖测试图清单冻结；同一输入/参数生成原图与两模型三列，必要时GT；逐图记录亮度、暗纹理、噪声、色偏、过曝、边缘伪影，图与日志可追溯。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
-    "completed_archive": false
+    "completed_archive": false,
+    "status": "completed",
+    "evidence": "docs/M2_REPORT.md; configs/m2_samples.json; results/m2/; experiments/m2_visual/observations.csv"
   },
   {
     "key": 6,

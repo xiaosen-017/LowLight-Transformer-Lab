@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "input_count": 5,
+  "model_output_count": 10,
+  "settings": {
+    "resize": false,
+    "crop": false,
+    "input_gamma": 1.0,
+    "output_brightness": 1.0,
+    "self_ensemble": false,
+    "GT_mean": false,
+    "precision": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "output": "RGB PNG at original resolution"
+  },
+  "scenes": [
+    {
+      "input": "22.png",
+      "input_sha256": "7cf9d3f9ac01336c6249afd2ea5389e6bf588df7f27eb3cf5124e6f0394e30b6",
+      "outputs": [
+        {
+          "model": "retinexformer",
+          "file": "results/m2/retinexformer/22.png",
+          "bytes": 329021,
+          "sha256": "bbed75cc8324f83827dd74f2baa157f4e3cce7e22a00b6590fe50433c69496c8",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 246,
+          "pixel_std": 63.90069273482379,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        },
+        {
+          "model": "llformer",
+          "file": "results/m2/llformer/22.png",
+          "bytes": 390064,
+          "sha256": "e542edacbaf66f34cd149489bc115d5893e3b1fbe4325fb87504e73c6230a611",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 3,
+          "pixel_max": 255,
+          "pixel_std": 62.56134766827282,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        }
+      ]
+    },
+    {
+      "input": "111.png",
+      "input_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+      "outputs": [
+        {
+          "model": "retinexformer",
+          "file": "results/m2/retinexformer/111.png",
+          "bytes": 320793,
+          "sha256": "749924b76475145974aabadfa3fd3fa19511032529edde7da07b5dd981ff6d58",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 12,
+          "pixel_max": 255,
+          "pixel_std": 44.38618484150998,
+          "decode_and_shape": "PASS",
+          "different_from_input": true,
+          "same_bytes_as_m1": true
+        },
+        {
+          "model": "llformer",
+          "file": "results/m2/llformer/111.png",
+          "bytes": 374980,
+          "sha256": "59c3574a7c6cdc6ae2c4e8941ea65c25647a8488336028a3d81db168ce34564c",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 8,
+          "pixel_max": 255,
+          "pixel_std": 43.85454031205808,
+          "decode_and_shape": "PASS",
+          "different_from_input": true,
+          "same_bytes_as_m1": true
+        }
+      ]
+    },
+    {
+      "input": "146.png",
+      "input_sha256": "6a955842b2f8dde700487973958ee1f99c43123764d579744b2ff517fac5870e",
+      "outputs": [
+        {
+          "model": "retinexformer",
+          "file": "results/m2/retinexformer/146.png",
+          "bytes": 342789,
+          "sha256": "57f0817047f4a729c4613fa8959691eed536cdf471c597a85bc5b3c74b050c68",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 255,
+          "pixel_std": 56.06154028411159,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        },
+        {
+          "model": "llformer",
+          "file": "results/m2/llformer/146.png",
+          "bytes": 409409,
+          "sha256": "94c9dd38da32230b32831dbe1ced22027ed420c5cb691fbe658eee4cc8b283dd",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 244,
+          "pixel_std": 55.018376149961895,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        }
+      ]
+    },
+    {
+      "input": "493.png",
+      "input_sha256": "d196959186cb53980d2138ef13a5dd18840e613c0296c6c7b9a720fde3e0a37d",
+      "outputs": [
+        {
+          "model": "retinexformer",
+          "file": "results/m2/retinexformer/493.png",
+          "bytes": 397373,
+          "sha256": "ef42844c65f7a3a76e50d8d21a01522f35e2211f251113ef23ff50f191120e8d",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 220,
+          "pixel_std": 54.16670103199036,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        },
+        {
+          "model": "llformer",
+          "file": "results/m2/llformer/493.png",
+          "bytes": 458607,
+          "sha256": "21a33026c7e5c525ccc8cc796ca0cbbfd3890c8431e476f73e2bfda9f42023d4",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 255,
+          "pixel_std": 70.53451119834885,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        }
+      ]
+    },
+    {
+      "input": "778.png",
+      "input_sha256": "26667c53ff5d97a794c3bfed729a6fb88ed5298e834787b28a21852853a2e830",
+      "outputs": [
+        {
+          "model": "retinexformer",
+          "file": "results/m2/retinexformer/778.png",
+          "bytes": 418439,
+          "sha256": "19314cfb828a4b740c7db96a1a8e5ffbcb992ddf34fac1751840db174885d268",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 255,
+          "pixel_std": 44.897199295615984,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        },
+        {
+          "model": "llformer",
+          "file": "results/m2/llformer/778.png",
+          "bytes": 465306,
+          "sha256": "dc2c78c79cb51d731d8b9b1b235af3a82c42c6e5386e9a41268b2fceec916019",
+          "width": 600,
+          "height": 400,
+          "mode": "RGB",
+          "pixel_min": 0,
+          "pixel_max": 255,
+          "pixel_std": 49.73266176746972,
+          "decode_and_shape": "PASS",
+          "different_from_input": true
+        }
+      ]
+    }
+  ],
+  "scope": "Image decoding, dimensions, dtype and integrity checks; no GT-based quality metrics computed."
+}

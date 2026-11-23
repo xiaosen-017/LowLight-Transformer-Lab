@@ -1,0 +1,39 @@
+Python executable: <M1_ROOT>\work\venvs\retinexformer37\Scripts\python.exe
+torch: 1.13.1+cpu CUDA available: False device: cpu threads: 4
+checkpoint fields: ['params'] state tensors: 122 strict load: <All keys matched successfully>
+input: (600, 400) RGB; padded tensor: (1, 3, 400, 600) gamma=1; brightness=1; ensemble=False; resize=False
+{
+  "model": "Retinexformer",
+  "device": "cpu",
+  "threads": 4,
+  "weights_sha256": "9b4810dc51322fab70be8658ee0ad1df64a54aa814497b7849767baa2ff32cd1",
+  "state_tensors": 122,
+  "strict_load": "<All keys matched successfully>",
+  "input": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\493.png",
+  "output": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\493.png",
+  "input_size": [
+    600,
+    400
+  ],
+  "output_size": [
+    600,
+    400
+  ],
+  "mode": "RGB",
+  "load_seconds": 0.04130240000000018,
+  "forward_seconds": 3.1700217,
+  "input_mean_rgb": [
+    0.02550523541867733,
+    0.02442844584584236,
+    0.02791760489344597
+  ],
+  "output_mean_rgb": [
+    0.32782647058823533,
+    0.25916519607843136,
+    0.2448089379084967
+  ],
+  "output_min": 0,
+  "output_max": 220,
+  "mean_absolute_change_0_255": 64.08314305555555
+}
+SUCCESS: real official-weight local forward and PNG saved

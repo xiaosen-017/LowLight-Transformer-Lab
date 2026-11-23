@@ -1,0 +1,200 @@
+{
+  "experiment": "M2",
+  "started_at": "2026-11-23T10:33:40.694673+08:00",
+  "git_commit": "ead81b3688bc6c505b48a8af9b7545513a5b3255",
+  "manifest_sha256": "478b2d8546cc63d2b744df5968804d7d789352f312c28003c82a9e7444f781e6",
+  "upstreams": {
+    "Retinexformer": {
+      "url": "https://github.com/caiyuanhao1998/Retinexformer.git",
+      "commit": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+      "directory": "third_party/Retinexformer",
+      "license": "MIT"
+    },
+    "LLFormer": {
+      "url": "https://github.com/TaoWangzj/LLFormer.git",
+      "commit": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+      "directory": "third_party/LLFormer",
+      "license": "CC BY-NC-SA 4.0 (academic research)"
+    }
+  },
+  "weights": [
+    {
+      "model": "Retinexformer",
+      "path": "weights/retinexformer/LOL_v1.pth",
+      "name": "LOL_v1.pth",
+      "size": 6475021,
+      "sha256": "9b4810dc51322fab70be8658ee0ad1df64a54aa814497b7849767baa2ff32cd1",
+      "official_source": "https://huggingface.co/CaiYuanhao/Retinexformer",
+      "revision": "7983bc70dca2cf043000f1efe793d51172d2f83b"
+    },
+    {
+      "model": "LLFormer",
+      "path": "weights/llformer/model_bestPSNR.pth",
+      "name": "model_bestPSNR.pth",
+      "size": 296109482,
+      "sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+      "official_source": "https://drive.google.com/file/d/1nTLY_gChn2_Va2BfS_R_W-bdjsqsLHJB/view"
+    }
+  ],
+  "settings": {
+    "resize": false,
+    "crop": false,
+    "input_gamma": 1.0,
+    "output_brightness": 1.0,
+    "self_ensemble": false,
+    "GT_mean": false,
+    "precision": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "output": "RGB PNG at original resolution"
+  },
+  "commands": [
+    {
+      "model": "Retinexformer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\retinexformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\scripts\\infer_retinexformer.py",
+        "--repo",
+        "<M1_ROOT>\\work\\repos\\Retinexformer",
+        "--weights",
+        "<M1_ROOT>\\work\\LOL_v1.pth",
+        "--input",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\22.png",
+        "--output",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\22.png",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\retinexformer_22.png.log",
+      "started_at": "2026-11-23T10:33:40.796144+08:00",
+      "exit_code": 0
+    },
+    {
+      "model": "Retinexformer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\retinexformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\scripts\\infer_retinexformer.py",
+        "--repo",
+        "<M1_ROOT>\\work\\repos\\Retinexformer",
+        "--weights",
+        "<M1_ROOT>\\work\\LOL_v1.pth",
+        "--input",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\111.png",
+        "--output",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\111.png",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\retinexformer_111.png.log",
+      "started_at": "2026-11-23T10:33:49.559692+08:00",
+      "exit_code": 0
+    },
+    {
+      "model": "Retinexformer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\retinexformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\scripts\\infer_retinexformer.py",
+        "--repo",
+        "<M1_ROOT>\\work\\repos\\Retinexformer",
+        "--weights",
+        "<M1_ROOT>\\work\\LOL_v1.pth",
+        "--input",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\146.png",
+        "--output",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\146.png",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\retinexformer_146.png.log",
+      "started_at": "2026-11-23T10:33:55.396505+08:00",
+      "exit_code": 0
+    },
+    {
+      "model": "Retinexformer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\retinexformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\scripts\\infer_retinexformer.py",
+        "--repo",
+        "<M1_ROOT>\\work\\repos\\Retinexformer",
+        "--weights",
+        "<M1_ROOT>\\work\\LOL_v1.pth",
+        "--input",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\493.png",
+        "--output",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\493.png",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\retinexformer_493.png.log",
+      "started_at": "2026-11-23T10:34:01.211184+08:00",
+      "exit_code": 0
+    },
+    {
+      "model": "Retinexformer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\retinexformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\scripts\\infer_retinexformer.py",
+        "--repo",
+        "<M1_ROOT>\\work\\repos\\Retinexformer",
+        "--weights",
+        "<M1_ROOT>\\work\\LOL_v1.pth",
+        "--input",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input\\778.png",
+        "--output",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\retinexformer\\778.png",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\retinexformer_778.png.log",
+      "started_at": "2026-11-23T10:34:06.947666+08:00",
+      "exit_code": 0
+    },
+    {
+      "model": "LLFormer",
+      "argv": [
+        "<M1_ROOT>\\work\\venvs\\llformer37\\Scripts\\python.exe",
+        "-u",
+        "<PROJECT_ROOT>\\patches\\test_llformer_cpu.py",
+        "--input_dir",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\input",
+        "--result_dir",
+        "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\llformer",
+        "--weights",
+        "<M1_ROOT>\\work\\model_bestPSNR.pth",
+        "--device",
+        "cpu",
+        "--threads",
+        "4"
+      ],
+      "log": "<PROJECT_ROOT>\\runs\\m2\\20261123_five_lolv1\\logs\\llformer.log",
+      "started_at": "2026-11-23T10:34:12.760148+08:00",
+      "exit_code": 0
+    }
+  ],
+  "status": "PASS",
+  "samples": [
+    "22.png",
+    "111.png",
+    "146.png",
+    "493.png",
+    "778.png"
+  ],
+  "script_sha256": {
+    "scripts/run_m2.py": "e7828324d52d1b86abecf8b28ac8d5ad634d7d5bec38d7c7262a1f38d28f5133",
+    "scripts/infer_retinexformer.py": "24c8826a275d37c0b32f6a4fe83cca4a04d657074463ae842c2105fb89bd5420",
+    "patches/test_llformer_cpu.py": "6c7f58e1bc67e7f4103513e85d246ba9251b4bd8acaaa149f705220aba04c6bb"
+  },
+  "completed_at": "2026-11-23T10:37:15.714995+08:00",
+  "canonical_lf_sha256": {
+    "configs/m2_samples.json": "d0b2bf93d1e81544e49d460aa4c4ceca1c21c38f48061cbfd9d75eeb60f57c0e",
+    "scripts/run_m2.py": "e7828324d52d1b86abecf8b28ac8d5ad634d7d5bec38d7c7262a1f38d28f5133",
+    "scripts/infer_retinexformer.py": "78a907ff64dfb851157d791a2ee93b7370d15b636f797d8c6b75cdb454ddb0af",
+    "patches/test_llformer_cpu.py": "684fe65bc1c93a648d66a4781fbef2bf38b331bdd7cb7593de3547ef3a1362d3"
+  },
+  "hash_note": "Original manifest_sha256 and script_sha256 are runtime raw-byte hashes; canonical_lf_sha256 normalizes Git checkout line endings for comparison."
+}

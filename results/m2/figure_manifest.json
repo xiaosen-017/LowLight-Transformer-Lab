@@ -1,0 +1,68 @@
+[
+  {
+    "file": "results/m2/figures/22_comparison.png",
+    "sha256": "ff0164f8590aae75a8778e7c5f3a59b656d9eb56df817749462ed58179056468",
+    "width": 1800,
+    "height": 488,
+    "image_columns": [
+      "input",
+      "retinexformer",
+      "llformer"
+    ],
+    "cell_pixels_match_sources": true
+  },
+  {
+    "file": "results/m2/figures/111_comparison.png",
+    "sha256": "d9ba67e4ecf5ad4aaec08e92d39620ae58377c9e1c02d8f3a54740a5b05b7866",
+    "width": 1800,
+    "height": 488,
+    "image_columns": [
+      "input",
+      "retinexformer",
+      "llformer"
+    ],
+    "cell_pixels_match_sources": true
+  },
+  {
+    "file": "results/m2/figures/146_comparison.png",
+    "sha256": "5e9d87d666a4d08d395e4aa75880b943f0099941c0ea04160b529447e0699cb1",
+    "width": 1800,
+    "height": 488,
+    "image_columns": [
+      "input",
+      "retinexformer",
+      "llformer"
+    ],
+    "cell_pixels_match_sources": true
+  },
+  {
+    "file": "results/m2/figures/493_comparison.png",
+    "sha256": "0512bf4f496b1e32c69fa57dc60459ce883a4278cefc21f304ad863061efbba3",
+    "width": 1800,
+    "height": 488,
+    "image_columns": [
+      "input",
+      "retinexformer",
+      "llformer"
+    ],
+    "cell_pixels_match_sources": true
+  },
+  {
+    "file": "results/m2/figures/778_comparison.png",
+    "sha256": "116d27dcecf9d52bd0213e177b30d137b871a5c011d0ef5a4bed98ff7efcd566",
+    "width": 1800,
+    "height": 488,
+    "image_columns": [
+      "input",
+      "retinexformer",
+      "llformer"
+    ],
+    "cell_pixels_match_sources": true
+  },
+  {
+    "file": "results/m2/figures/overview.png",
+    "sha256": "e25c57c08df169174abecb6b1ee00284a5f0ffdc92a02d0639efa5f008e5ed5e",
+    "width": 900,
+    "resize": "uniform 0.5 scale, Lanczos; presentation overview"
+  }
+]

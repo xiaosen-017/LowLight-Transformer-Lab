@@ -1,0 +1,19 @@
+torch: 1.13.1+cpu device: cpu threads: 4
+checkpoint fields: ['epoch', 'state_dict', 'optimizer']
+strict checkpoint load: <All keys matched successfully> state tensors: 1485
+weight_load_seconds: 0.4574065999999988
+restoring images......
+input: <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\input\22.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 35.220262899999994
+<M1_ROOT>\work\venvs\llformer37\lib\site-packages\skimage\util\dtype.py:135: UserWarning: Possible precision loss when converting from float32 to uint8
+  .format(dtypeobj_in, dtypeobj_out))
+1/5
+input: <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\input\111.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 33.953327099999996
+2/5
+input: <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\input\146.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 33.4353031
+3/5
+input: <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\input\493.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 34.075470300000006
+4/5
+input: <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\input\778.png original_size: (600, 400) padded_shape: (1, 3, 400, 608) forward_seconds: 34.08476449999998
+5/5
+Files saved at <PROJECT_ROOT>\runs\m2\20261123_five_lolv1\llformer
+finish !
