@@ -88,14 +88,6 @@
       "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/11",
       "state": "open",
       "milestone": "M4"
-    },
-    {
-      "key": 12,
-      "number": 12,
-      "title": "[M5] 汇总课程报告、展示图表与团队分工",
-      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues/12",
-      "state": "open",
-      "milestone": "M5"
     }
   ],
   "milestones": [
@@ -118,11 +110,6 @@
       "title": "M4",
       "number": 4,
       "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/4"
-    },
-    {
-      "title": "M5",
-      "number": 5,
-      "url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestone/5"
     }
   ],
   "repository_url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab",
@@ -137,5 +124,6 @@
     "detail": "error: your authentication token is missing required scopes [read:project]\nTo request it, run:  gh auth refresh -s read:project",
     "fallback": "Issues + Milestones created; no extra account scopes requested."
   },
-  "progress_updated_at": "2026-11-23 M2 completed"
+  "progress_updated_at": "2026-11-23 M2 completed",
+  "scope": "M1-M4"
 }

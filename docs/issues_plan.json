@@ -126,16 +126,5 @@
     ],
     "body": "## 目标\n\n只在后续执行：A均值基线、B仅网格、C仅融合、D二者组合；固定数据/权重/硬件；参数开发与正式测试分开；质量、边缘、时间/峰值内存与失败齐全，再决定扩大分辨率。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n- docs/innovation_plan.md\n",
     "completed_archive": false
-  },
-  {
-    "key": 12,
-    "title": "[M5] 汇总课程报告、展示图表与团队分工",
-    "milestone": "M5",
-    "labels": [
-      "m5",
-      "documentation"
-    ],
-    "body": "## 目标\n\n依赖真实M2–M4证据；≤3页技术报告、15分钟PPT和5分钟问答准备；方法分析、实验效果/局限、团队分工及论文/代码引用完整。\n\n## 范围与状态\n\nTODO：本次仅建仓和规划，未执行该阶段，不预填结果。\n\n## 验收\n\n- [ ] 产物、命令、配置/哈希和真实日志齐全\n- [ ] 结果与失败范围如实说明\n- [ ] 由另一位组员复核（待账号确认后认领）\n\n## 关联文档\n\n- docs/roadmap.md\n- docs/evaluation_protocol.md\n",
-    "completed_archive": false
   }
 ]
