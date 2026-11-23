@@ -113,17 +113,17 @@
     }
   ],
   "repository_url": "https://github.com/xiaosen-017/LowLight-Transformer-Lab",
-  "visibility": "PRIVATE",
+  "visibility": "PUBLIC",
   "initial_commit": "425333015bcf7875143ddc0d81f161a488485a09",
   "branch_protection": {
-    "enabled": false,
-    "detail": "gh: Upgrade to GitHub Pro or make this repository public to enable this feature. (HTTP 403)"
+    "enabled": true,
+    "detail": "main requires one approval and repository-owner CODEOWNERS review; stale approvals dismissed; conversations resolved; force pushes/deletion blocked; admins retain bypass."
   },
   "project_board": {
     "created": false,
     "detail": "error: your authentication token is missing required scopes [read:project]\nTo request it, run:  gh auth refresh -s read:project",
     "fallback": "Issues + Milestones created; no extra account scopes requested."
   },
-  "progress_updated_at": "2026-11-23 M2 completed",
+  "progress_updated_at": "2026-11-23 public repository and owner-reviewed PR workflow",
   "scope": "M1-M4"
 }

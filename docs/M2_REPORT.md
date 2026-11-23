@@ -4,7 +4,7 @@
 
 ## 样本与运行设置
 
-使用固定Retinexformer官方demo附带的全部五张LOL-v1测试图，按22、111、146、493、778顺序登记。清单及SHA-256在 `configs/m2_samples.json`；没有按增强结果挑选图片。输入来源为LOL数据集作者页面与官方 `demo/examples/README.md`，仅作本私有组内非商业学术展示。
+使用固定Retinexformer官方demo附带的全部五张LOL-v1测试图，按22、111、146、493、778顺序登记。清单及SHA-256在 `configs/m2_samples.json`；没有按增强结果挑选图片。输入来源为LOL数据集作者页面与官方 `demo/examples/README.md`，用于非商业学术研究与方法效果展示，保留图像来源署名。
 
 官方源码：Retinexformer `2dd9ae05f34a34e2df3b955f743215ac3cda0f82`；LLFormer `ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302`。
 
