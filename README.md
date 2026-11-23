@@ -1,6 +1,6 @@
 # LowLight-Transformer-Lab
 
-**基于 Transformer 的低光照图像增强：复现、对比与推理优化**。课程：多媒体分析与理解；主题：Transformer Models in CV；三人团队私有协作项目。
+**基于 Transformer 的低光照图像增强：复现、对比与推理优化**。主题：Transformer Models in CV。
 
 仓库：[https://github.com/xiaosen-017/LowLight-Transformer-Lab](https://github.com/xiaosen-017/LowLight-Transformer-Lab) · [全部阶段 Issues](https://github.com/xiaosen-017/LowLight-Transformer-Lab/issues?q=is%3Aissue) · [里程碑](https://github.com/xiaosen-017/LowLight-Transformer-Lab/milestones?state=all) · [建仓验收与平台限制](docs/github_setup.md)。
 
