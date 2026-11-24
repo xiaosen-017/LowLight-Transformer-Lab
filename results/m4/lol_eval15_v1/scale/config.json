@@ -1,0 +1,13 @@
+{
+  "input_name": "2.png",
+  "input_sha256": "d024bfffa3b0287e7fecebac3a6afe07c2fa5c00a152a62f7be36cb245dbb688",
+  "source_script": "scale_llformer_lol.py",
+  "source_script_sha256": "b72550542eb8637139d037d10c74c6c928f8f0cefc5f4814c39edd7b45ec3d6c",
+  "code_sha": "1b0b5c2afe50e0ca4d432ea0b012cdea41de82be",
+  "upstream_sha": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+  "weights_sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+  "python": "3.12.14",
+  "torch": "2.15.0",
+  "device": "cpu",
+  "threads": 4
+}

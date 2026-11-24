@@ -2,6 +2,8 @@
 
 CPU 合成检查由作者从新目录复跑，JSON 与入库记录逐字节一致。实测与合成正确性分开报告；本项目没有第二位 LLFormer 复核人。
 
+[正式结果、逐图指标和资源记录](../../results/m4/lol_eval15_v1/REPORT.md) · [LLFormer 的方法与上下文限制](../../docs/LLFORMER_METHOD.md)。
+
 ## 从仓库根目录复跑
 
 使用 Python 3.12 和 PyTorch；本次测试环境及实现 SHA-256 见 [实测报告](../../results/m4/cpu_gate.json)。

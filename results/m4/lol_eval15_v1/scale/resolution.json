@@ -1,0 +1,34 @@
+[
+  {
+    "hw": [
+      341,
+      512
+    ],
+    "tiles": 6,
+    "status": "RUN",
+    "elapsed_s": 22.310695874970406,
+    "peak_process_bytes": 1030635520,
+    "estimate_s": null
+  },
+  {
+    "hw": [
+      683,
+      1024
+    ],
+    "tiles": 35,
+    "status": "RUN",
+    "elapsed_s": 110.8953692499781,
+    "peak_process_bytes": 1065811968,
+    "estimate_s": 130.14572593732737
+  },
+  {
+    "hw": [
+      1365,
+      2048
+    ],
+    "tiles": 150,
+    "status": "NOT RUN",
+    "reason": "projected >180s/image",
+    "estimate_s": 475.26586821419187
+  }
+]
