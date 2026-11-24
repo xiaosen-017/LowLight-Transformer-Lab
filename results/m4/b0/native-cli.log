@@ -1,0 +1,3 @@
+upstream ed5e7bf; unmodified test_UHD.py; arm64 Mac; CPU build; exit 1
+model.cuda()
+AssertionError: Torch not compiled with CUDA enabled

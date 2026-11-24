@@ -1,0 +1,144 @@
+[
+  {
+    "compat": false,
+    "device": "cpu",
+    "hw": [
+      719,
+      1279
+    ],
+    "canvas": [
+      720,
+      1280
+    ],
+    "expected_exception": "AssertionError: Torch not compiled with CUDA enabled"
+  },
+  {
+    "compat": false,
+    "device": "cpu",
+    "hw": [
+      720,
+      1280
+    ],
+    "canvas": [
+      736,
+      1296
+    ],
+    "expected_exception": "AssertionError: Torch not compiled with CUDA enabled"
+  },
+  {
+    "compat": false,
+    "device": "cpu",
+    "hw": [
+      736,
+      1296
+    ],
+    "canvas": [
+      752,
+      1312
+    ],
+    "expected_exception": "AssertionError: Torch not compiled with CUDA enabled"
+  },
+  {
+    "compat": false,
+    "device": "cpu",
+    "hw": [
+      400,
+      600
+    ],
+    "canvas": [
+      416,
+      608
+    ],
+    "expected_exception": "RuntimeError: stack expects a non-empty TensorList"
+  },
+  {
+    "compat": false,
+    "device": "cpu",
+    "hw": [
+      2160,
+      3840
+    ],
+    "canvas": [
+      2176,
+      3856
+    ],
+    "expected_exception": "AssertionError: Torch not compiled with CUDA enabled"
+  },
+  {
+    "compat": true,
+    "device": "cpu",
+    "hw": [
+      719,
+      1279
+    ],
+    "canvas": [
+      720,
+      1280
+    ],
+    "tiles": 1,
+    "nonfinite_canvas": 0,
+    "nonfinite_original": 0,
+    "constant_error_on_covered": 0.0
+  },
+  {
+    "compat": true,
+    "device": "cpu",
+    "hw": [
+      720,
+      1280
+    ],
+    "canvas": [
+      736,
+      1296
+    ],
+    "tiles": 1,
+    "nonfinite_canvas": 32256,
+    "nonfinite_original": 0,
+    "constant_error_on_covered": 0.0
+  },
+  {
+    "compat": true,
+    "device": "cpu",
+    "hw": [
+      736,
+      1296
+    ],
+    "canvas": [
+      752,
+      1312
+    ],
+    "tiles": 1,
+    "nonfinite_canvas": 65024,
+    "nonfinite_original": 32256,
+    "constant_error_on_covered": 0.0
+  },
+  {
+    "compat": true,
+    "device": "cpu",
+    "hw": [
+      400,
+      600
+    ],
+    "canvas": [
+      416,
+      608
+    ],
+    "expected_exception": "RuntimeError: stack expects a non-empty TensorList"
+  },
+  {
+    "compat": true,
+    "device": "cpu",
+    "hw": [
+      2160,
+      3840
+    ],
+    "canvas": [
+      2176,
+      3856
+    ],
+    "tiles": 25,
+    "nonfinite_canvas": 96256,
+    "nonfinite_original": 0,
+    "constant_error_on_covered": 0.0
+  }
+]
