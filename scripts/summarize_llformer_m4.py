@@ -71,6 +71,13 @@ def main():
         assert all(r["png_sha256"]==target["png_sha256"] and
                    (r["tile"],r["stride"],r["fusion"])==(target["tile"],target["stride"],target["fusion"])
                    for r in bench)
+        for i,r in enumerate(bench):
+            assert digest(args.study/f"bench-{arm}"/f"{i:02d}_111.png")==target["png_sha256"]
+        for prefix in ("eval","bench"):
+            meta=json.loads((args.study/f"{prefix}-{arm}"/"config.json").read_text())
+            assert meta["arm"]==arm and meta["device"]=="cpu" and meta["threads"]==4
+            assert meta["plan_sha256"]==digest(ROOT/"configs/m4_lol.json")
+            assert meta["source_sha256"]==digest(ROOT/"scripts/run_llformer_m4.py")
         stats["bench"]={k:dict(median=statistics.median(v),min=min(v),max=max(v)) for k in
                 ("net_s","tile_pipeline_s","end_to_end_s") for v in [[float(r[k]) for r in bench[1:]]]}
         stats["bench"]["peak_process_gib"]=max(int(r["peak_process_bytes"]) for r in bench)/2**30
