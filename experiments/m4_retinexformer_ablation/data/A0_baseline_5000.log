@@ -1,0 +1,174 @@
+2026-11-24 21:06:59,178 INFO: 
+                ____                _       _____  ____
+               / __ ) ____ _ _____ (_)_____/ ___/ / __ \
+              / __  |/ __ `// ___// // ___/\__ \ / /_/ /
+             / /_/ // /_/ /(__  )/ // /__ ___/ // _, _/
+            /_____/ \__,_//____//_/ \___//____//_/ |_|
+     ______                   __   __                 __      __
+    / ____/____   ____   ____/ /  / /   __  __ _____ / /__   / /
+   / / __ / __ \ / __ \ / __  /  / /   / / / // ___// //_/  / /
+  / /_/ // /_/ // /_/ // /_/ /  / /___/ /_/ // /__ / /<    /_/
+  \____/ \____/ \____/ \____/  /_____/\____/ \___//_/|_|  (_)
+    
+Version Information: 
+	BasicSR: 1.2.0+cc63400
+	PyTorch: 1.11.0
+	TorchVision: 0.12.0
+2026-11-24 21:06:59,178 INFO: 
+  name: RetinexFormer_LOL_v1
+  model_type: ImageCleanModel
+  scale: 1
+  num_gpu: 1
+  manual_seed: 100
+  datasets:[
+    train:[
+      name: TrainSet
+      type: Dataset_PairedImage
+      dataroot_gt: data/LOLv1/Train/target
+      dataroot_lq: data/LOLv1/Train/input
+      geometric_augs: True
+      filename_tmpl: {}
+      io_backend:[
+        type: disk
+      ]
+      use_shuffle: True
+      num_worker_per_gpu: 2
+      batch_size_per_gpu: 2
+      mini_batch_sizes: [8]
+      iters: [300000]
+      gt_size: 64
+      gt_sizes: [128]
+      dataset_enlarge_ratio: 1
+      prefetch_mode: None
+      phase: train
+      scale: 1
+    ]
+    val:[
+      name: ValSet
+      type: Dataset_PairedImage
+      dataroot_gt: data/LOLv1/Test/target
+      dataroot_lq: data/LOLv1/Test/input
+      io_backend:[
+        type: disk
+      ]
+      phase: val
+      scale: 1
+    ]
+  ]
+  network_g:[
+    type: RetinexFormer
+    in_channels: 3
+    out_channels: 3
+    n_feat: 40
+    stage: 1
+    num_blocks: [1, 2, 2]
+  ]
+  path:[
+    pretrain_network_g: None
+    strict_load_g: True
+    resume_state: None
+    root: <local repo root>
+    experiments_root: <local repo root>
+    models: <local repo root>
+    training_states: <local repo root>
+    log: <local repo root>
+    visualization: <local repo root>
+  ]
+  train:[
+    total_iter: 5000
+    warmup_iter: -1
+    use_grad_clip: True
+    scheduler:[
+      type: CosineAnnealingRestartCyclicLR
+      periods: [46000, 104000]
+      restart_weights: [1, 1]
+      eta_mins: [0.0003, 1e-06]
+    ]
+    mixing_augs:[
+      mixup: True
+      mixup_beta: 1.2
+      use_identity: True
+    ]
+    optim_g:[
+      type: Adam
+      lr: 0.0002
+      betas: [0.9, 0.999]
+    ]
+    pixel_opt:[
+      type: L1Loss
+      loss_weight: 1
+      reduction: mean
+    ]
+  ]
+  val:[
+    window_size: 4
+    val_freq: 1000.0
+    save_img: False
+    rgb2bgr: True
+    use_image: False
+    max_minibatch: 8
+    metrics:[
+      psnr:[
+        type: calculate_psnr
+        crop_border: 0
+        test_y_channel: False
+      ]
+    ]
+  ]
+  logger:[
+    print_freq: 500
+    save_checkpoint_freq: 1000.0
+    use_tb_logger: True
+    wandb:[
+      project: low_light
+      resume_id: None
+    ]
+  ]
+  dist_params:[
+    backend: nccl
+    port: 29500
+  ]
+  is_train: True
+  dist: False
+  rank: 0
+  world_size: 1
+  rename_flag: False
+
+2026-11-24 21:06:59,624 INFO: Dataset Dataset_PairedImage - TrainSet is created.
+2026-11-24 21:06:59,624 INFO: Training statistics:
+	Number of train images: 485
+	Dataset enlarge ratio: 1
+	Batch size per gpu: 2
+	World size (gpu number): 1
+	Require iter number per epoch: 243
+	Total epochs: 21; iters: 5000.
+2026-11-24 21:06:59,624 INFO: Dataset Dataset_PairedImage - ValSet is created.
+2026-11-24 21:06:59,624 INFO: Number of val images/folders in ValSet: 15
+2026-11-24 21:06:59,734 INFO: Model [ImageCleanModel] is created.
+2026-11-24 21:07:03,636 INFO: Start training from epoch: 0, iter: 0
+2026-11-24 21:07:07,955 INFO: 
+ Updating Patch_Size to 128 and Batch_Size to 8 
+
+2026-11-24 21:07:36,632 INFO: [Retin..][epoch:  2, iter:     500, lr:(2.000e-04,)] [eta: 0:05:31, time (data): 0.037 (0.010)] l_pix: 1.6715e-01 
+2026-11-24 21:08:00,736 INFO: [Retin..][epoch:  4, iter:   1,000, lr:(2.001e-04,)] [eta: 0:04:03, time (data): 0.039 (0.000)] l_pix: 8.6897e-02 
+2026-11-24 21:08:00,736 INFO: Saving models and training states.
+2026-11-24 21:08:04,810 INFO: Validation ValSet,		 # psnr: 17.7455
+2026-11-24 21:08:28,711 INFO: [Retin..][epoch:  6, iter:   1,500, lr:(2.003e-04,)] [eta: 0:03:27, time (data): 0.035 (0.006)] l_pix: 1.4774e-01 
+2026-11-24 21:08:52,377 INFO: [Retin..][epoch:  8, iter:   2,000, lr:(2.005e-04,)] [eta: 0:02:48, time (data): 0.035 (0.000)] l_pix: 6.7585e-02 
+2026-11-24 21:08:52,377 INFO: Saving models and training states.
+2026-11-24 21:08:55,696 INFO: Validation ValSet,		 # psnr: 18.4716
+2026-11-24 21:09:19,452 INFO: [Retin..][epoch: 10, iter:   2,500, lr:(2.007e-04,)] [eta: 0:02:19, time (data): 0.025 (0.000)] l_pix: 3.5374e-01 
+2026-11-24 21:09:42,920 INFO: [Retin..][epoch: 12, iter:   3,000, lr:(2.010e-04,)] [eta: 0:01:48, time (data): 0.020 (0.000)] l_pix: 1.5249e-01 
+2026-11-24 21:09:42,920 INFO: Saving models and training states.
+2026-11-24 21:09:46,409 INFO: Validation ValSet,		 # psnr: 18.1338
+2026-11-24 21:10:10,091 INFO: [Retin..][epoch: 14, iter:   3,500, lr:(2.014e-04,)] [eta: 0:01:21, time (data): 0.021 (0.001)] l_pix: 5.5686e-02 
+2026-11-24 21:10:34,500 INFO: [Retin..][epoch: 16, iter:   4,000, lr:(2.019e-04,)] [eta: 0:00:53, time (data): 0.028 (0.000)] l_pix: 9.1246e-02 
+2026-11-24 21:10:34,500 INFO: Saving models and training states.
+2026-11-24 21:10:37,958 INFO: Validation ValSet,		 # psnr: 18.2815
+2026-11-24 21:11:02,047 INFO: [Retin..][epoch: 18, iter:   4,500, lr:(2.023e-04,)] [eta: 0:00:26, time (data): 0.035 (0.000)] l_pix: 1.0045e-01 
+2026-11-24 21:11:25,643 INFO: [Retin..][epoch: 20, iter:   5,000, lr:(2.029e-04,)] [eta: 0:00:00, time (data): 0.026 (0.001)] l_pix: 1.1525e-01 
+2026-11-24 21:11:25,643 INFO: Saving models and training states.
+2026-11-24 21:11:29,151 INFO: Validation ValSet,		 # psnr: 18.0569
+2026-11-24 21:11:29,157 INFO: End of training. Time consumed: 0:04:25
+2026-11-24 21:11:29,157 INFO: Save the latest model.
+2026-11-24 21:11:32,651 INFO: Validation ValSet,		 # psnr: 18.0565
