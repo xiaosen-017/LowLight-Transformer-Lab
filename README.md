@@ -10,8 +10,8 @@
 | --- | --- | --- |
 | M1 基础复现 | 已完成 | 两个独立环境，官方LOL权重严格加载，同图本地推理及完整记录 |
 | M2 视觉展示 | 已完成 | 5张LOL-v1测试图、10张增强结果、三列对照图和逐图观察 |
-| M3 定量评估与方法分析 | 待开展 | 统一配对测试集的PSNR/SSIM、效率记录和论文方法讨论 |
-| M4 分块推理与融合优化 | 待开展 | 官方均值融合基线、平滑加权融合、参数消融与边缘分析 |
+| M3 定量评估与方法分析 | LLFormer 已完成 | [eval15 指标与论文复现](experiments/m3_evaluation/llformer/README.md)；Retinexformer 完整同机对照另行开展 |
+| M4 分块推理与融合优化 | LOL 小图已完成 | [四组质量、边界、时间和内存实测](results/m4/lol_eval15_v1/REPORT.md)，[复跑命令](experiments/m4_tiling/README.md) |
 
 ## 两个模型的研究重点
 
@@ -82,7 +82,7 @@
 
 ## 复现环境与运行方式
 
-当前运行环境：Windows 11、Ryzen 5 5625U、Python 3.7.9、PyTorch 1.13.1+cpu、torchvision 0.14.1+cpu。两个模型使用独立环境；精确依赖保存在 `environments/`。
+原始 M1/M2 运行环境：Windows 11、Ryzen 5 5625U、Python 3.7.9、PyTorch 1.13.1+cpu、torchvision 0.14.1+cpu。两个模型使用独立环境；精确依赖保存在 `environments/`。
 
 ```powershell
 git clone https://github.com/xiaosen-017/LowLight-Transformer-Lab.git

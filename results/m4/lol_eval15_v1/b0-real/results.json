@@ -1,0 +1,68 @@
+[
+  {
+    "hw": [
+      256,
+      320
+    ],
+    "tile": [
+      128,
+      128
+    ],
+    "stride": [
+      64,
+      64
+    ],
+    "default_tile": false,
+    "b0_tiles": 12,
+    "b0_invalid_pixels": 0,
+    "b0_seconds": 10.84663087502122,
+    "b1_tiles": 12,
+    "b1_min_count": 1,
+    "b1_invalid_pixels": 0,
+    "max_abs_b0_b1": 0.0,
+    "peak_process_bytes": 763084800
+  },
+  {
+    "hw": [
+      272,
+      336
+    ],
+    "tile": [
+      128,
+      128
+    ],
+    "stride": [
+      64,
+      64
+    ],
+    "default_tile": false,
+    "b0_tiles": 12,
+    "b0_invalid_pixels": 9472,
+    "b0_seconds": 8.22327729105018,
+    "b1_tiles": 20,
+    "b1_min_count": 1,
+    "b1_invalid_pixels": 0,
+    "peak_process_bytes": 763084800
+  },
+  {
+    "hw": [
+      80,
+      96
+    ],
+    "tile": [
+      128,
+      128
+    ],
+    "stride": [
+      64,
+      64
+    ],
+    "default_tile": false,
+    "b0_error": "stack expects a non-empty TensorList",
+    "b0_seconds": 0.0028015419375151396,
+    "b1_tiles": 1,
+    "b1_min_count": 1,
+    "b1_invalid_pixels": 0,
+    "peak_process_bytes": 763084800
+  }
+]
