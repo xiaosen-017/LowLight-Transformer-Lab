@@ -9,7 +9,10 @@ import numpy as np
 import torch
 from PIL import Image
 from check_llformer_b0 import helpers
-from infer_llformer_tiled import load_model
+from infer_llformer_tiled import ROOT, load_model
+from eval_llformer_lol import digest
+import platform
+import subprocess
 from llformer_tiling import tiled_predict
 
 
@@ -23,6 +26,15 @@ def main():
     args.out.mkdir(parents=True,exist_ok=False)
     torch.set_num_threads(4)
     model=load_model("cpu")
+    # The runner is usable from an arbitrary machine; archive only portable names.
+    source=args.image
+    config=dict(input_name=source.name,input_sha256=digest(source),
+                source_script=Path(__file__).name,source_script_sha256=digest(Path(__file__)),
+                code_sha=subprocess.check_output(["git","-C",str(ROOT),"rev-parse","HEAD"],text=True).strip(),
+                upstream_sha=subprocess.check_output(["git","-C",str(ROOT/"third_party/LLFormer"),"rev-parse","HEAD"],text=True).strip(),
+                weights_sha256=digest(ROOT/"weights/llformer/model_bestPSNR.pth"),
+                python=platform.python_version(),torch=str(torch.__version__),device="cpu",threads=4)
+    (args.out/"config.json").write_text(json.dumps(config,indent=2)+"\n")
     ns,_=helpers(True)
     rows=[]
     with Image.open(args.image) as source:

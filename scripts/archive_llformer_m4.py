@@ -23,10 +23,12 @@ def main():
         for f in ("config.json","metrics.csv"):
             shutil.copyfile(src/name/f,dest/f)
         shutil.copyfile(src/(name+".log"),dest/"run.log")
-    for path in ("b0-real/results.json","scale/resolution.json","verified/summary.json","edges/edge_metrics.csv"):
+    for path in ("b0-real/results.json","b0-real/config.json","scale/resolution.json","scale/config.json","verified/summary.json","edges/edge_metrics.csv"):
         dest=out/path
         dest.parent.mkdir(exist_ok=True)
         shutil.copyfile(src/path,dest)
+    for stage in ("b0-real","scale"):
+        shutil.copyfile(src/(stage+".log"),out/stage/"run.log")
     edge=list(csv.DictReader((src/"edges/edge_metrics.csv").open()))
     arms=summary["arms"]
     def edge_mean(arm,key):

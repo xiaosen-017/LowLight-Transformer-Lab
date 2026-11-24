@@ -33,7 +33,7 @@ python scripts/infer_llformer_tiled.py data/input.png runs/compare/hann.png --ti
 
 ## 实验复跑入口
 
-使用 M3 已登记的 LOL-v1 原包与权重。除 eval15 外只解压开发图 `our485/{low,high}/2.png`。Torchvision 与当前 Torch 配套（此次 torchvision 0.29.2）。每条命令都创建新目录。开发集先跑 3×3 的均值融合可行性扫描；正式组别在 configs/m4_lol.json 预登记，不从已知 M3 整图得分或 M4 测试得分中挑选网格。每种正式组别在新进程中跑完 15 对；固定样本效率再单测，不能把探索阶段的一次测量当作正式耗时。
+依赖可用 `python -m pip install -r environments/llformer-m3-m4-cpu.txt` 安装。使用 M3 已登记的 LOL-v1 原包与权重。除 eval15 外只解压开发图 `our485/{low,high}/2.png`。Torchvision 与当前 Torch 配套（此次 torchvision 0.29.2）。每条命令都创建新目录。开发集先跑 3×3 的均值融合可行性扫描；正式组别在 configs/m4_lol.json 预登记，不从已知 M3 整图得分或 M4 测试得分中挑选网格。每种正式组别在新进程中跑完 15 对；固定样本效率再单测，不能把探索阶段的一次测量当作正式耗时。
 
 ```sh
 python scripts/check_llformer_b0.py runs/local-b0
