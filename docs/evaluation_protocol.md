@@ -1,7 +1,9 @@
-# 实验协议：M2已执行，M3/M4评估方案待开展
+# 实验协议：M2 与 LLFormer 的 M3/M4
 
 
 M2已按configs/m2_samples.json冻结并完成全部5张官方demo图：22、111、146、493、778，原尺寸600×400，两个模型使用匹配LOL权重和相同输入。三列图、逐图观察与完整性检查已归档；本文件以下的配对指标和资源重复测量方案用于M3/M4。
+
+LLFormer 的实际整图环境、两种窗口口径及完整数据见 [M3 复现](../experiments/m3_evaluation/llformer/README.md)。M4 冻结的网格、时间边界和可重跑命令见 [分块实验](../experiments/m4_tiling/README.md)。下面保留组内统一协议及其历史背景。
 
 ## 数据与模型
 
