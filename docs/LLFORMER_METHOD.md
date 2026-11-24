@@ -9,3 +9,5 @@ Retinexformer 的出发点不同：先估计光照以提亮输入，再用光照
 块越小，单次注意力看到的同行、同列范围越短。相邻块在同一重叠像素上可能给出不同预测。均值让边缘和中心的预测等权；归一化 Hann 则在有其他块覆盖时减弱边缘预测。它无法补回块外上下文，也未保证提高 PSNR。A/C 和 B/D 固定网格比较权重，A/B 和 C/D 固定融合比较块尺寸；不同块尺寸要在同一张边界掩膜上评价，避免换一批像素后误判收益。
 
 来源：[LLFormer 论文](https://arxiv.org/abs/2212.11548)、[上游实现（固定版本）](https://github.com/TaoWangzj/LLFormer/blob/ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302/model/LLFormer.py)、[Retinexformer 论文](https://arxiv.org/abs/2303.06705)。本项目的整图结果与指标口径见 [M3 实验](../experiments/m3_evaluation/llformer/README.md)。
+
+同一口径的局部对照：把仓库之前冻结的全部 5 张 M2 增强 PNG 与官方配对 GT 匹配，不重跑模型、不挑图。LLFormer 平均 22.1470 dB / 0.78745，Retinexformer 平均 24.1107 dB / 0.82624。这里只能说两个方法在这批展示图上的差异；不能归因于某个模块，不能替代两个模型各自跑完 15 张的全测试集对比。两者不比较历史单次运行速度。[逐图原始数据](../experiments/m3_evaluation/llformer/m2_five_pairs.csv)；复算命令：`python scripts/compare_m2_pairs.py data/lol/eval15 runs/m2-paired-check.csv`。
