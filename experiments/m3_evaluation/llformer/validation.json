@@ -1,0 +1,31 @@
+{
+  "paired_pngs_verified": 15,
+  "metric_tolerance": 1e-09,
+  "m2_comparison": [
+    {
+      "name": "111.png",
+      "max_uint8_difference": 1,
+      "differing_values": 1777
+    },
+    {
+      "name": "146.png",
+      "max_uint8_difference": 1,
+      "differing_values": 4331
+    },
+    {
+      "name": "22.png",
+      "max_uint8_difference": 1,
+      "differing_values": 4832
+    },
+    {
+      "name": "493.png",
+      "max_uint8_difference": 1,
+      "differing_values": 699
+    },
+    {
+      "name": "778.png",
+      "max_uint8_difference": 1,
+      "differing_values": 294
+    }
+  ]
+}

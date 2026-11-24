@@ -1,0 +1,15 @@
+{
+  "method": "LLFormer whole-frame",
+  "device": "cpu",
+  "threads": 4,
+  "torch": "2.15.0",
+  "python": "3.12.14",
+  "numpy": "2.5.5",
+  "skimage": "0.25.2",
+  "upstream": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+  "weights_sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+  "script_sha256": "0106d99dbd2d5dac7ea48482f4210e872b7cc20466d572c44ed05a045b37dca7",
+  "loader_sha256": "3a5df972fff425bad02ea7857388d734452cfb99a51308551af4586aca1b2002",
+  "repeats": 1,
+  "timing": "exploratory single CPU forward, no warm-up; not a benchmark"
+}

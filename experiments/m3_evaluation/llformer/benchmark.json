@@ -1,0 +1,68 @@
+{
+  "device": "cpu",
+  "machine": "arm64",
+  "system": "Darwin",
+  "os_release": "25.6.0",
+  "threads": 4,
+  "input_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+  "setup_s": 0.5040190409636125,
+  "setup_scope": "checkpoint hash, model import/build/load/eval",
+  "process_peak_rss_bytes": 2969436160,
+  "rss_scope": "OS process lifetime high-water mark including load; not model-only",
+  "torch": "2.15.0",
+  "python": "3.12.14",
+  "rows": [
+    {
+      "index": 0,
+      "phase": "warmup",
+      "forward_s": 12.307080707978457,
+      "end_to_end_s": 12.345368208945729,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    },
+    {
+      "index": 1,
+      "phase": "measured",
+      "forward_s": 12.545665166922845,
+      "end_to_end_s": 12.577854790957645,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    },
+    {
+      "index": 2,
+      "phase": "measured",
+      "forward_s": 11.894988749991171,
+      "end_to_end_s": 11.929133167024702,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    },
+    {
+      "index": 3,
+      "phase": "measured",
+      "forward_s": 12.574724875041284,
+      "end_to_end_s": 12.603636542102322,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    },
+    {
+      "index": 4,
+      "phase": "measured",
+      "forward_s": 11.439943040953949,
+      "end_to_end_s": 11.473204583977349,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    },
+    {
+      "index": 5,
+      "phase": "measured",
+      "forward_s": 12.304825749946758,
+      "end_to_end_s": 12.342267749947496,
+      "output_sha256": "c322bff79f4097718ea95ca8f6bcf5b5ea281947079e5dfc82ed0febb4fa24d3"
+    }
+  ],
+  "forward_s": {
+    "median": 12.304825749946758,
+    "min": 11.439943040953949,
+    "max": 12.574724875041284
+  },
+  "end_to_end_s": {
+    "median": 12.342267749947496,
+    "min": 11.473204583977349,
+    "max": 12.603636542102322
+  }
+}
