@@ -1,0 +1,11 @@
+{
+  "dataset": "LOL-v1 official archive; full eval15 untouched for grid selection",
+  "dev": "our485/2.png (lowest numeric training ID, feasibility only)",
+  "dev_tiles": [128, 256, 384],
+  "dev_overlap_percent": [0, 25, 50],
+  "formal": {"A": [128, 64, "mean"], "B": [256, 128, "mean"], "C": [128, 64, "hann"], "D": [256, 128, "hann"]},
+  "rationale": "Preselect 128 vs 256, same nominal 50% overlap; avoid choosing the best score on eval15. Positive Hann floor 0.001.",
+  "edge_metric": "mean absolute RGB residual on +/-2 pixel band around union of BOTH grids' interior tile starts/ends, in uint8 levels; identical mask for all arms",
+  "resource_stop": "Skip expansion on allocation failure, process peak RSS > 8 GiB or > 180 s per 600x400 image; preserve failures.",
+  "bench": "111.png; each arm in a fresh process, one warmup then five measured runs; no other inference concurrently"
+}
