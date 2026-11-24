@@ -22,3 +22,7 @@ python scripts/bench_llformer_cpu.py data/lol/eval15/low/111.png runs/m3-bench-l
 metrics.csv 每行记录一对样本的输入、GT、输出文件哈希和结果；该表的单次 forward_seconds 不是正式速度基准。benchmark.json 对固定 111.png 排除 1 次预热后记录 5 次，分别计模型前向和读图→预处理→前向→写 PNG，权重加载单列。RSS 是独立进程含权重加载的 OS 高水位，macOS 单位为字节；显存 N/A。单图资源数字不能代表 4K 或跨设备速度。
 
 本次 111.png 五次正式前向中位数 12.30 s（11.44–12.57 s）；端到端中位数 12.34 s；独立进程峰值 RSS 2.77 GiB。六次输出文件 SHA 一致。CPU 状态和后台负载未锁定，以实测范围解释，不据此比较其他机器。
+
+## 与论文 LOL 行对照
+
+[原文表 2](https://arxiv.org/pdf/2212.11548) 的 LOL 行报告 PSNR 23.6491 dB、SSIM 0.8163。固定版本的上游 evaluation.py 对 uint8 RGB 使用旧版 skimage 的多通道默认 SSIM；在本地明确设置等价的 7×7 均匀窗、样本协方差，逐图等权得到 **23.64855 dB / 0.816310**（与表格差 −0.00055 dB / +0.000010）。这是相同协议的现代实现复算，不声称装了作者的历史评估环境。与小组 11×11 Gaussian 的 0.81846 分栏报告；两种 SSIM 都用完全相同的已保存增强图。未复算论文 LPIPS，不用 PSNR/SSIM 一致性推断其他指标。详见 [逐图分数](paper_window.csv)。复跑：`python scripts/score_llformer_paper.py runs/m3-eval15-local data/lol/eval15/high runs/paper-window.csv`。
