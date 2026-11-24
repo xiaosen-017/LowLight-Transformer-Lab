@@ -15,13 +15,15 @@ def main():
     args=parser.parse_args()
     sample="111.png"
     crops=[]
+    previews=[]
     for label in ("Whole","A","B","C","D"):
         file=(args.whole/sample if label=="Whole" else next((args.study/f"eval-{label}").glob("*_"+sample)))
         with Image.open(file) as im:
             assert im.size==(600,400) and im.mode=="RGB"
             crops.append(np.array(im.crop((64,96,320,256))))
+            previews.append(im.resize((256,171),Image.Resampling.LANCZOS))
     gap=7
-    sheet=Image.new("RGB",(5*(256+gap)+gap,415),"#ffffff")
+    sheet=Image.new("RGB",(5*(256+gap)+gap,620),"#ffffff")
     draw=ImageDraw.Draw(sheet)
     draw.text((gap,6),"LOL-v1 111.png | same 256 x 160 output crop | red ticks: shared internal tile cuts",fill="#202733")
     for j,label in enumerate(["Whole image","A: 128 / mean","B: 256 / mean","C: 128 / Hann","D: 256 / Hann"]):
@@ -37,6 +39,9 @@ def main():
         diff=np.minimum(255,np.abs(crops[j].astype(int)-crops[0])*4).astype("uint8")
         sheet.paste(Image.fromarray(diff),(x,245))
     draw.text((gap,221),"4 x absolute RGB difference from Whole (same scale for all panels; not error against GT)",fill="#202733")
+    draw.text((gap,426),"Whole scene | output only | same display mapping and scale",fill="#202733")
+    for j,thumb in enumerate(previews):
+        sheet.paste(thumb,(gap+j*(256+gap),447))
     with args.output.open("xb") as f:
         sheet.save(f,format="PNG")
 
