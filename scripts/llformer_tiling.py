@@ -25,8 +25,8 @@ def tiled_predict(image, predict, tile, stride, fusion="mean"):
     if image.ndim != 3 or image.shape[0] != 3 or image.dtype != torch.float32:
         raise ValueError("expected float32 CHW RGB")
     h, w = image.shape[-2:]
-    if min(h, w) < 1 or any(t <= 0 or t % 16 or not 0 < s <= t
-                             for t, s in zip(tile, stride, strict=True)):
+    if len(tile) != 2 or len(stride) != 2 or min(h, w) < 1 or any(
+            t <= 0 or t % 16 or not 0 < s <= t for t, s in zip(tile, stride)):
         raise ValueError("tiles must be multiples of 16; stride must be in [1,tile]")
     ph, pw = tile
     H, W = (max(t, ((d + 15) // 16) * 16) for d, t in zip((h, w), tile))

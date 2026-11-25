@@ -1,0 +1,14 @@
+{
+  "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+  "weights_sha256": "9b4810dc51322fab70be8658ee0ad1df64a54aa814497b7849767baa2ff32cd1",
+  "strict_state_keys": 122,
+  "model": "retinexformer",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "python": "3.7.9",
+  "torch": "1.13.1+cpu",
+  "numpy": "1.21.6",
+  "threads": 4,
+  "script_sha256": "ef715d34a26208c73b0ddfd980d67168bc97242a62dbe9068b2755017a077bd8",
+  "setup_s": 0.5190826999999993,
+  "device": "cpu"
+}

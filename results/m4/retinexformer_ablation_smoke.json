@@ -1,0 +1,66 @@
+[
+  {
+    "group": "A0",
+    "ORF": false,
+    "IG_MSA": false,
+    "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+    "arch_sha256": "64a6efe59a4ae5780624ce7e9e83b4ee15289027fe1b6c7a40a13833b29c3115",
+    "smoke_shape": [
+      1,
+      3,
+      64,
+      64
+    ],
+    "smoke": "PASS",
+    "gate_without_orf": "multiplicative gate bypassed at every level",
+    "training": "not_run"
+  },
+  {
+    "group": "A1",
+    "ORF": true,
+    "IG_MSA": false,
+    "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+    "arch_sha256": "141a486478aeddd20e8ab4017132c8e7b84fe6fcb78334084728ed845bc12aef",
+    "smoke_shape": [
+      1,
+      3,
+      64,
+      64
+    ],
+    "smoke": "PASS",
+    "gate_without_orf": "multiplicative gate bypassed at every level",
+    "training": "not_run"
+  },
+  {
+    "group": "A2",
+    "ORF": false,
+    "IG_MSA": true,
+    "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+    "arch_sha256": "69906da5eb1d6401c9215a4ddcaf954274604269464497a31e03f42d0ee647d3",
+    "smoke_shape": [
+      1,
+      3,
+      64,
+      64
+    ],
+    "smoke": "PASS",
+    "gate_without_orf": "multiplicative gate bypassed at every level",
+    "training": "not_run"
+  },
+  {
+    "group": "A3",
+    "ORF": true,
+    "IG_MSA": true,
+    "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+    "arch_sha256": "7a7cd9d3be146c24247d80ebe67abe234af1dce610818f6bf87b6aa866749eba",
+    "smoke_shape": [
+      1,
+      3,
+      64,
+      64
+    ],
+    "smoke": "PASS",
+    "gate_without_orf": "multiplicative gate bypassed at every level",
+    "training": "not_run"
+  }
+]

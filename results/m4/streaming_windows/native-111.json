@@ -1,0 +1,114 @@
+{
+  "torch": "1.13.1+cpu",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "threads": 4,
+  "regression_cases": [
+    {
+      "shape": [
+        17,
+        29
+      ],
+      "fusion": "mean",
+      "max_abs_difference": 0.0,
+      "tiles": 1
+    },
+    {
+      "shape": [
+        17,
+        29
+      ],
+      "fusion": "hann",
+      "max_abs_difference": 0.0,
+      "tiles": 1
+    },
+    {
+      "shape": [
+        73,
+        101
+      ],
+      "fusion": "mean",
+      "max_abs_difference": 0.0,
+      "tiles": 24
+    },
+    {
+      "shape": [
+        73,
+        101
+      ],
+      "fusion": "hann",
+      "max_abs_difference": 0.0,
+      "tiles": 24
+    },
+    {
+      "shape": [
+        96,
+        96
+      ],
+      "fusion": "mean",
+      "max_abs_difference": 0.0,
+      "tiles": 25
+    },
+    {
+      "shape": [
+        96,
+        96
+      ],
+      "fusion": "hann",
+      "max_abs_difference": 0.0,
+      "tiles": 25
+    },
+    {
+      "shape": [
+        1,
+        31
+      ],
+      "fusion": "mean",
+      "max_abs_difference": 0.0,
+      "tiles": 1
+    },
+    {
+      "shape": [
+        1,
+        31
+      ],
+      "fusion": "hann",
+      "max_abs_difference": 0.0,
+      "tiles": 1
+    }
+  ],
+  "upstream": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+  "weights_sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+  "strict_state_keys": 1485,
+  "tiles": 12,
+  "minimum_weight": {
+    "mean": 1.0,
+    "hann": 0.0010000000474974513
+  },
+  "shape": [
+    400,
+    600
+  ],
+  "input_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+  "gt_sha256": "35f002dcc27712b1662e764c75326e7576205ca191440ae31b5ae98d999f530a",
+  "scale_long_side": null,
+  "tile": 256,
+  "stride": 128,
+  "combined_prediction_fusion_s": 96.58929380000001,
+  "peak_process_bytes": 621637632,
+  "metrics": {
+    "mean": {
+      "psnr": 18.982076796415647,
+      "ssim": 0.8736047685281046,
+      "ssim_uniform7": 0.870018804817895,
+      "output_sha256": "a645c33ef1ebcc26664dd70cf4819700042b5c5e45f622833a23f2e2d5be0ee2",
+      "stack_reference_max_abs_error": 0.0
+    },
+    "hann": {
+      "psnr": 18.89890200511327,
+      "ssim": 0.8746048982178806,
+      "ssim_uniform7": 0.8710861753540984,
+      "output_sha256": "848b1ecfe702234c3cfb4ba9e0d44962f33348578bc4d81e46b13c4a1a950d98",
+      "stack_reference_max_abs_error": 0.0
+    }
+  }
+}

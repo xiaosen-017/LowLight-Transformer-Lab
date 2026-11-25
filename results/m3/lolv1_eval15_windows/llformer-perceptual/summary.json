@@ -1,0 +1,7 @@
+{
+  "alexnet_sha256": "c0b0b720dd1986a542b0b999f2c4a6daa31a1ced8246ebf22c2cadac1cee67b8",
+  "lpips_version": "0.1.4",
+  "alexnet_asset": "convolution tensors extracted from official archive, ZIP CRC checked",
+  "lpips_alex": 0.16923855741818747,
+  "mae": 0.06345227269426289
+}
