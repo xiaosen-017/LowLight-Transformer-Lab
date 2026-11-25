@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | M1 基础复现 | 已完成 | 两个独立环境，官方LOL权重严格加载，同图本地推理及完整记录 |
 | M2 视觉展示 | 已完成 | 5张LOL-v1测试图、10张增强结果、三列对照图和逐图观察 |
-| M3 定量评估与方法分析 | LOL-v1 已完成 | 两模型各 15 对官方权重评估、论文指标对照和同机基准 |
+| M3 定量评估与方法分析 | LOL-v1 已完成 | 两模型各 15 对 LOL-v1、Retinexformer 另评估 200 对 LOL-v2，提供论文指标对照和同机基准 |
 | M4 分块推理与融合优化 | LOL-v1 已完成 | 四组正式消融、边界与资源对照、流式融合与分辨率扩展 |
 
 ## 两个模型的研究重点
@@ -62,6 +62,10 @@
 | LLFormer | **23.64912 dB / 0.816309** | 23.6491 dB / 0.81846 |
 
 LLFormer 原论文另外两项也已复算，LPIPS **0.169239**，MAE **0.063452**。同机计时采用 Windows CPU 四线程及一次预热五次测量。
+
+Retinexformer 另完成 **LOL-v2 Real 与 Synthetic 各 100 对**。Real 得到 **22.79550 / 0.839669**，Synthetic 得到 **25.67270 / 0.929550**。两组指标按论文精度均吻合。逐图结果和运行命令见 `results/m3/retinexformer_lolv2_windows/`。
+
+论文其余数据集和原始训练的验收范围列在 `docs/evaluation_protocol.md`。LLFormer 的待评估数据包括 MIT-Adobe FiveK 及原生 UHD-LOL4K/8K。
 
 论文分析围绕三个问题展开：光照引导与轴向注意力分别解决什么问题；网络设计如何影响细节、颜色与资源开销；哪些场景暴露两种方法的局限。方法与局限分析见 `docs/LLFORMER_METHOD.md`，完整协议见 `docs/evaluation_protocol.md`。
 
@@ -140,7 +144,7 @@ patches/        LLFormer CPU与Windows兼容适配
 environments/   两套依赖与环境记录
 results/m1/     单图复现档案
 results/m2/     十张增强图、五张对照图、总览和运行记录
-results/m3/     两篇论文的 LOL-v1 定量复现与同机对照
+results/m3/     LOL-v1、Retinexformer LOL-v2 与同机对照
 results/m4/     LLFormer 分块消融、资源记录和流式扩展
 logs/           原M1与M2推理日志
 experiments/    视觉观察、定量评估和消融实验记录

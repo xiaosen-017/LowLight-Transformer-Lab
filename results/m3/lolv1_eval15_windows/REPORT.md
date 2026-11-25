@@ -38,4 +38,4 @@ python scripts/fetch_alexnet_features.py runs/alexnet_features.npz
 python scripts/score_lolv1_perceptual.py runs/m3-ll data/lol/eval15/high runs/alexnet_features.npz runs/m3-ll-extra
 ```
 
-本轮保存 30 张输出在本地忽略目录，Git 归档包含逐图指标、输入/GT/输出 SHA、环境和重复计时。项目完成范围为两篇论文共享的 LOL-v1 表格结果。论文的其他数据集、训练完整流程与 UHD-LOL4K/8K 表格另有各自数据和权重。
+本轮保存 30 张输出在本地忽略目录，Git 归档包含逐图指标、输入/GT/输出 SHA、环境和重复计时。本报告覆盖两篇论文共享的 LOL-v1 表格结果。Retinexformer 另外两个划分见 [LOL-v2 实测报告](../retinexformer_lolv2_windows/REPORT.md)。余下数据集、原始训练与 UHD-LOL4K/8K 表项列在 [评估协议](../../../docs/evaluation_protocol.md)。

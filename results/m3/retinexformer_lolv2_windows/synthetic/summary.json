@@ -1,0 +1,19 @@
+{
+  "upstream": "2dd9ae05f34a34e2df3b955f743215ac3cda0f82",
+  "weights_sha256": "2f793853c6b1ba0b4a3ff12b7b10f0f2c851eaefda1006437eb3f35229838c4a",
+  "strict_state_keys": 122,
+  "test_pairs": 100,
+  "variant": "synthetic",
+  "threads": 4,
+  "device": "cpu",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "python": "3.7.9",
+  "torch": "1.13.1+cpu",
+  "numpy": "1.21.6",
+  "script_sha256": "3b80f1b8fc3451fed96cb4899d6cc8989ab1e139d3dea5058a0fcf348bf1737c",
+  "evaluator_sha256": "e905ce6eab2aee268d6d49ede68f6b0649c20e02c2c65662d2294c4db478fd83",
+  "psnr": 25.672701067481412,
+  "ssim": 0.9295495189652379,
+  "sum_forward_s": 293.69446430000005,
+  "peak_process_bytes": 703160320
+}

@@ -45,7 +45,7 @@ def module_from(name, path):
     return module
 
 
-def load_model(name, repo, weights, expected_sha=None):
+def load_model(name, repo, weights, expected_sha=None, retinex_variant='LOL_v1'):
     registration = next(x for x in json.loads((ROOT/'configs/weights.json').read_text())
                         if x['model'].lower() == name)
     upstream = json.loads((ROOT/'configs/upstreams.json').read_text())[registration['model']]
@@ -67,7 +67,8 @@ def load_model(name, repo, weights, expected_sha=None):
     if name == 'retinexformer':
         import yaml
         module = module_from('official_retinex_arch', repo/'basicsr/models/archs/RetinexFormer_arch.py')
-        config = yaml.safe_load((repo/'Options/RetinexFormer_LOL_v1.yml').read_text())['network_g']
+        config_path = repo/'Options'/('RetinexFormer_' + retinex_variant + '.yml')
+        config = yaml.safe_load(config_path.read_text(encoding='utf-8'))['network_g']
         config.pop('type')
         model = module.RetinexFormer(**config)
         state = checkpoint.get('params_ema', checkpoint.get('params', checkpoint))

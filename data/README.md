@@ -11,3 +11,9 @@ M2 先登记 5–10 张图片的来源、使用范围、哈希和尺寸，再批
 ## M2五图展示
 
 已使用官方demo的全部五张LOL-v1测试图，来源/文件SHA见configs/m2_samples.json。原始输入PNG继续从官方上游获取；三列对照面板包含原图和两模型输出，用于本项目的非商业学术研究展示。M2原始增强PNG、对照面板与总览保存在results/m2/。
+
+## M3 定量数据
+
+- LOL-v1：`data/lol/eval15/low` 与 `data/lol/eval15/high` 各 15 张，同名配对。来源与逐图 SHA-256 见 [LOL-v1 实测报告](../results/m3/lolv1_eval15_windows/REPORT.md)。
+- Retinexformer LOL-v2：解包作者的 LOLv2.zip，保留 `Real_captured/Test/{Low,Normal}` 和 `Synthetic/Test/{Low,Normal}`。两者各 100 对。下载、权重与重跑命令见 [LOL-v2 实测报告](../results/m3/retinexformer_lolv2_windows/REPORT.md)。
+- UHD-LOL4K/8K：按作者发布的测试集划分获取配对数据及对应权重。发布许可只允许非商业研究。来源 [UHD-LOL 官方数据页](https://taowangzj.github.io/projects/LLFormer/)。
