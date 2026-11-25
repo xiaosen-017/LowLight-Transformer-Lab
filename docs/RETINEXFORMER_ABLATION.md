@@ -1,108 +1,21 @@
-# M4 子任务报告：RetinexFormer 光照引导模块的短程消融实验
+# Retinexformer 模块消融归档与复跑
 
-> 状态：**短程消融已完成**；LLFormer 分块推理与重叠融合**未开展（NOT RUN）**。
-> 本文件遵循 `docs/evaluation_protocol.md` 的记录要求，所有数值均来自本机实际运行。
+PR #14 提供四组各 5,000 步训练的日志和验证曲线。仓库核对了日志、`summary.csv` 和 `psnr_curves.json` 的五个计划验证点，保留原始数据与图。
 
-## 1. 范围与固定条件
+| 原记录组别 | 最佳 PSNR | 迭代 | 标签检查 |
+| --- | ---: | ---: | --- |
+| A0 | 18.4716 | 2,000 | 两模块关闭的记录 |
+| A1 | 18.5679 | 2,000 | 单模块归属待原训练证据确认 |
+| A2 | 18.8396 | 2,000 | 单模块归属待原训练证据确认 |
+| A3 | 20.2992 | 3,000 | 完整组记录 |
 
-| 项目 | 内容 |
-| --- | --- |
-| 模型 | RetinexFormer（`n_feat=40, stage=1, num_blocks=[1,2,2]`），不改网络结构与超参 |
-| 权重初始化 | 从零训练，不使用官方预训练权重 |
-| 数据集 | LOL-v1，训练集 485 张，验证集 15 张 |
-| 训练步数 | 5,000 步（四组完全一致） |
-| 随机种子 | `manual_seed: 100` |
-| 设备 | RTX 3050 Laptop GPU，4GB；CUDA 11.3 |
-| 环境 | Windows；Python 3.10.22；PyTorch 1.11.0；TorchVision 0.12.0；BasicSR 1.2.0+cc63400 |
-| 实际生效 batch/patch | batch 8，patch 128×128（训练启动后由脚本自动调整，日志有记录） |
-| 评估口径 | 每 1,000 步在 ValSet 上计算 PSNR（`crop_border=0, test_y_channel=False`），与配置一致 |
+原提交的 Python 开关参数及 CSV 将 A1 写成 IG-MSA 开、ORF 关，将 A2 写成 ORF 开、IG-MSA 关。原报告的文字和图例将两组反向命名。训练日志没有保存运行时开关或架构快照，因此目前可引用四条组别曲线，以及 A3 与 A0 的 +1.8276 dB 短程差值。模块强弱或协同需要补齐两组归属并做重复实验。旧图上的 A1/A2 模块文字仍属于历史原标签。
 
-**四组唯一变量**：ORF（光照估计与光照调制）与 IG-MSA（光照引导多头自注意力）的启用与否。
+本次新增明确分组的 `experiments/m4_retinexformer_ablation/code/prepare_run.py`。它从官方固定 Git 提交导出四份独立源码，记录开关和架构哈希。A1 为只开启光照估计/调制，A2 为只开启注意力残差分支。关闭光照估计时同时绕过值分支的光照乘法，避免零张量将注意力输出压成零。四组均已在 CPU 完成 64×64 前向检查，A3 的架构文件保持官方原始字节。这一整理后的方案用于今后训练复跑，已归档的两个单模块分数暂不映射到新组别。新方案尚无独立 5,000 步重训曲线。
 
-## 2. 消融实现
-
-原始 `RetinexFormer_arch.py` 通过两个全局开关控制：
-
-- `ABL_IGMSA = 1` 时 `IGAB.forward` 执行 `attn(x, illu_fea_trans=...) + x`；置 0 时跳过该自注意力残差分支，仅保留前馈网络分支。
-- `ABL_ESTIMATOR = 1` 时 `RetinexFormer_Single_Stage.forward` 走 `estimator → img*illu_map+img → denoiser`；置 0 时跳过光照估计与光照调制，直接 `denoiser(img, 零特征)`。
-
-`ABL_IGMSA=1, ABL_ESTIMATOR=1` 与上游原始前向完全等价，因此 A3 即为完整模型。
-
-启用前用 `test_ablation_smoke.py` 对四组配置做过 64×64 前向验证：四组输出形状正确、数值有限、无 NaN，冒烟测试 PASS。
-
-> 说明：本消融针对的是 RetinexFormer 的两个关键模块，不是 README 中 M4 原定的 LLFormer 分块融合方向。两者是同一阶段下的不同子任务，本文不混报。
-
-## 3. 结果
-
-### 3.1 汇总
-
-| 实验 | ORF | IG-MSA | 含义 | 最佳 PSNR | 最佳迭代 | 后 3 次平均 PSNR | 末次 PSNR | 耗时 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A0 | ✗ | ✗ | Baseline | 18.4716 | 2,000 | 18.1574 | 18.0569 | 4.4 分钟 |
-| A1 | ✓ | ✗ | 仅 ORF | 18.5679 | 2,000 | 18.0242 | 17.9493 | 7.8 分钟 |
-| A2 | ✗ | ✓ | 仅 IG-MSA | 18.8396 | 2,000 | 18.4884 | 18.4311 | 4.8 分钟 |
-| A3 | ✓ | ✓ | 完整 RetinexFormer | 20.2992 | 3,000 | 19.9808 | 19.4434 | 8.0 分钟 |
-
-### 3.2 逐点验证 PSNR（dB）
-
-| Iteration | A0 | A1 | A2 | A3 |
-| --- | --- | --- | --- | --- |
-| 1,000 | 17.7455 | 17.5752 | 17.9293 | 18.2708 |
-| 2,000 | 18.4716 | 18.5679 | 18.8396 | 19.8817 |
-| 3,000 | 18.1338 | 18.1174 | 18.4710 | 20.2992 |
-| 4,000 | 18.2815 | 18.0058 | 18.5630 | 20.1998 |
-| 5,000 | 18.0569 | 17.9493 | 18.4311 | 19.4434 |
-
-### 3.3 关键差值
-
-| 对比 | 差值 |
-| --- | --- |
-| A3 − A0（两模块合计贡献） | **+1.8276 dB** |
-| A2 − A0（IG-MSA 单独贡献） | +0.3680 dB |
-| A1 − A0（ORF 单独贡献） | +0.0963 dB |
-| A3 − A1（去掉 IG-MSA 的损失） | +1.7313 dB |
-| A3 − A2（去掉 ORF 的损失） | +1.4596 dB |
-
-## 4. 观察与解释
-
-1. **完整模型显著优于任一单模块版本**：A3 在整个 1,000–5,000 步区间都位于其余三条曲线之上，且差距在 3,000 步时最大（+1.83 dB）。
-2. **两模块存在协同作用**：单独加入 IG-MSA 只带来 +0.37 dB，单独加入 ORF 只有 +0.10 dB，但两者同时存在时达到 +1.83 dB，远大于两者简单相加（+0.46 dB）。这与论文“光照特征作为注意力引导”的设计动机一致：IG-MSA 依赖光照特征作为注意力权重来源，缺少 ORF 时其引导信息退化。
-3. **ORF 单独作用接近噪声水平**：A1 与 A0 的差距仅 +0.10 dB，且两条曲线交错；在不提供光照引导注意力的情况下，光照调制本身收益有限。
-4. **曲线在 2,000 步附近均出现峰值后回落**，四组一致。短程训练下模型尚未进入稳定收敛区，因此本文只报告趋势，不对“过拟合”下结论。
-5. **耗时差异来自模块数量而非网格**：A0（4.4 分钟）最快，A3（8.0 分钟）最慢，与计算量随 IG-MSA 数量增加的预期一致。A1 与 A2 的耗时差异（7.8 vs 4.8 分钟）受当次机器负载影响，未做重复测量，不作为性能结论。
-
-## 5. 局限
-
-- 5,000 步远低于官方的 150,000 步，绝对值（A3 最佳 20.30 dB）显著低于官方权重的 25.16 dB，**不能与论文指标直接比较**。
-- 每组仅 1 次运行，未做多次重复与方差统计，因此差值（尤其 A1−A0 的 0.10 dB）不宜作强结论。
-- 训练启动后 BasicSR 将 patch 从 64 调到 128、batch 从 2 调到 8，削弱了与 README 中记录的原配置的可比性；但四组处于同一设置，组间比较仍然有效。
-- 未记录峰值显存与显存余量，只记录了训练未发生 OOM。
-
-## 6. 未开展项（NOT RUN）
-
-| 项目 | 状态 | 原因 |
-| --- | --- | --- |
-| LLFormer B0 上游 `test_UHD.py` 原始分块基线 | NOT RUN | 本机 4GB 显存无法承载 720×1280 图块 |
-| LLFormer B1 覆盖/尺寸修正 + 均值融合 | NOT RUN | 本轮优先完成消融子任务 |
-| 二维平滑窗（Hann）加权融合 | NOT RUN | 依赖 B1 通过正确性闸门 |
-| 网格参数消融（128/256/384 × 0/25%/50%） | NOT RUN | 同上 |
-| 边界带伪影与边缘分析 | NOT RUN | 同上 |
-| UHD-LOL4K 权重实验 | NOT RUN | 未获取官方权重，本机算力不足 |
-
-## 7. 复现命令
-
-```powershell
-# 环境
-conda activate Retinexformer
-
-# 冒烟测试（四组配置前向可用性）
-python experiments/m4_tiling/code/test_ablation_smoke.py
-
-# 四组短程消融（A3 需先单独训练 5000 步作为完整模型基准）
-python experiments/m4_tiling/code/run_ablation.py
-
-# 图表
-python experiments/m4_tiling/code/m4_plot.py
+```text
+python experiments/m4_retinexformer_ablation/code/prepare_run.py third_party/Retinexformer runs/retinex-ablation-smoke
+python experiments/m4_retinexformer_ablation/code/prepare_run.py third_party/Retinexformer runs/retinex-ablation-train --data data/lol --train
 ```
 
-权重与完整训练目录体积较大，未提交；汇总指标与日志见 `experiments/m4_tiling/data/`。
+`--train` 需要官方训练/验证对及对应 BasicSR CUDA 训练环境，运行目录须为新目录。该入口按组记录训练退出码和每组的配置哈希。当前复核跑的是 CPU 前向检查。旧日志和旧汇总位于 `experiments/m4_retinexformer_ablation/data/`。两模型官方 LOL 权重的定量复现参见 [M3 报告](../results/m3/lolv1_eval15_windows/REPORT.md)。LLFormer 分块融合是本项目的创新主线，正式四组实验与结果见 [分块报告](../results/m4/lol_eval15_v1/REPORT.md)。

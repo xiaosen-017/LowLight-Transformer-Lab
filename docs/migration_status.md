@@ -4,4 +4,4 @@ M1已归档：官方模型、预训练权重、两个独立环境和单图证据
 
 M2已完成：固定5张LOL-v1样本，两模型生成10张600×400增强PNG；5张三列面板、总览、逐图六维观察和推理日志已归档。
 
-仓库已设为Public，默认分支main；任务范围为M1至M4。M1/M2里程碑已完成，M3配对定量评估和M4分块融合优化待开展。main分支要求PR和代码所有者审核；Projects状态见github_setup.md。
+仓库已设为Public，默认分支main；任务范围为M1至M4。M1/M2里程碑已完成，M3 已完成两模型的 LOL-v1 与 Retinexformer 的 LOL-v2 定量复现，M4 已完成 15 对图分块融合消融及长边 2048 的扩展验证。main分支要求PR和代码所有者审核；Projects状态见github_setup.md。

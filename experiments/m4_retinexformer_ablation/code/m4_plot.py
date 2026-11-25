@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 ROOT = Path(__file__).resolve().parents[3]  # 仓库根目录
-ARCHIVE = ROOT / "runs_ablation"
-OUT_FIG = ROOT / "m4_figures"
-OUT_FIG.mkdir(exist_ok=True)
+ARCHIVE = Path(__file__).resolve().parents[1] / "data"
+OUT_FIG = ROOT / "runs" / "retinex-ablation-replot"
+OUT_FIG.mkdir(parents=True, exist_ok=True)
 
 # 中文字体
 for name in ("Microsoft YaHei", "SimHei", "SimSun"):
@@ -26,8 +26,8 @@ rows = list(__import__("csv").DictReader(
 
 LABEL = {
     "A0": "A0 Baseline (无 ORF / 无 IG-MSA)",
-    "A1": "A1 仅 ORF",
-    "A2": "A2 仅 IG-MSA",
+    "A1": "A1 (legacy group)",
+    "A2": "A2 (legacy group)",
     "A3": "A3 完整 RetinexFormer",
 }
 COLOR = {"A0": "#8C8C8C", "A1": "#5B8FF9", "A2": "#F6BD16", "A3": "#E8684A"}
@@ -81,5 +81,5 @@ d = {r["实验"]: float(r["最佳PSNR"]) for r in rows}
 print("\n相对 A0 的提升：")
 for g in ("A1", "A2", "A3"):
     print(f"  {g} - A0 = +{d[g] - d['A0']:.4f} dB")
-print(f"  完整( A3 ) - 无IGMSA( A1 ) = +{d['A3'] - d['A1']:.4f} dB")
-print(f"  完整( A3 ) - 无ORF( A2 ) = +{d['A3'] - d['A2']:.4f} dB")
+print(f"  A3 - legacy A1 = +{d['A3'] - d['A1']:.4f} dB")
+print(f"  A3 - legacy A2 = +{d['A3'] - d['A2']:.4f} dB")

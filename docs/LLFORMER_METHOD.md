@@ -11,3 +11,10 @@ Retinexformer 的出发点不同：先估计光照以提亮输入，再用光照
 来源：[LLFormer 论文](https://arxiv.org/abs/2212.11548)、[上游实现（固定版本）](https://github.com/TaoWangzj/LLFormer/blob/ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302/model/LLFormer.py)、[Retinexformer 论文](https://arxiv.org/abs/2303.06705)。本项目的整图结果与指标口径见 [M3 实验](../experiments/m3_evaluation/llformer/README.md)。
 
 同一口径的局部对照：把仓库之前冻结的全部 5 张 M2 增强 PNG 与官方配对 GT 匹配，不重跑模型、不挑图。LLFormer 平均 22.1470 dB / 0.78745，Retinexformer 平均 24.1107 dB / 0.82624。这里只能说两个方法在这批展示图上的差异；不能归因于某个模块，不能替代两个模型各自跑完 15 张的全测试集对比。两者不比较历史单次运行速度。[逐图原始数据](../experiments/m3_evaluation/llformer/m2_five_pairs.csv)；复算命令：`python scripts/compare_m2_pairs.py data/lol/eval15 runs/m2-paired-check.csv`。
+
+
+## 完整测试集的两模型结果
+
+Retinexformer 的 `Illumination_Estimator` 使用 RGB 和通道均值生成照度图与光照特征。单阶段网络将输入调制为 `img * illu_map + img`，恢复网络以光照特征乘到值分支。IG-MSA 把每个 head 的查询和键排成通道 × 空间布局，注意力矩阵作用在每头的通道维。固定通道宽度时，该乘法对像素数量近似线性。LLFormer 在每一行和列上分别生成空间注意力矩阵，固定通道宽度时矩阵规模随 `HW(H+W)` 增长。两种复杂度只描述各自注意力部分，不能替代实测推理时间。
+
+统一 eval15 上，Retinexformer 与 LLFormer 的平均 PSNR 分别为 25.1531 和 23.6491 dB，Gaussian SSIM 为 0.84546 和 0.81846。Retinexformer 在 15 张中有 10 张 PSNR 更高、13 张 SSIM 更高，同机单图四线程也更快。较大照度变化与暗区颗粒可能驱动场景间差异，逐图 CSV 可定位反例。模型、训练方案、权重来源共同影响结果，不能由两模型差值推断单一模块效果。LLFormer 的分块实验进一步表明，固定网格改变融合可以降低跨线误差并提高 SSIM，同时牺牲一些像素级 PSNR。见 [统一实测](../results/m3/lolv1_eval15_windows/REPORT.md) 和 [LLFormer 分块对照](../results/m4/lol_eval15_v1/REPORT.md)。

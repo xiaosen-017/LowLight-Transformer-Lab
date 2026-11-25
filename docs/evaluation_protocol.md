@@ -30,3 +30,26 @@ CPU分别记录进程峰值RSS及测量工具/采样间隔；CUDA若可用，用
 定性观察逐图记录暗部纹理、噪声、色偏、过曝、边缘/拼接伪影；保持同一显示缩放和颜色设置，不独立调亮对比图。M4固定实际块边界，可在预定边界带上记录像素梯度跳变和对GT的残差；此为补充边缘诊断，不替代PSNR/SSIM，也不按最优结果重新选边界。
 
 每次实验至少保存：Git SHA、上游SHA、权重SHA、配置/数据清单、Python/Torch/评估库版本、设备、padding/裁回/分块策略、逐图结果、日志、指标CSV及失败/OOM。没有真实运行的格子写NOT RUN，不填预测数值。结果主张由第二人独立复核。
+
+
+两模型 LOL-v1 定量复现细节与两个 SSIM 口径见 `results/m3/lolv1_eval15_windows/REPORT.md`。当前 Windows 实测沿用 scikit-image 0.15.0，逐通道显式设置 SSIM 窗口与协方差。
+
+## 论文复现覆盖范围
+
+以论文作者的方法为验收对象。每个数据集分别登记测试划分、官方模型权重、预处理和指标，不把不同数据集的结果合并成同一复现结论。
+
+| 论文 | 数据或实验 | 验收项 |
+| --- | --- | --- |
+| Retinexformer | LOL-v1 eval15 | 表 1，PSNR 25.16 / SSIM 0.845，已复现 |
+| Retinexformer | LOL-v2 Real / Synthetic | 表 1，22.80 / 0.840 与 25.67 / 0.930，各 100 对，使用各自的官方权重，已完成 |
+| Retinexformer | SID / SMID / SDSD-indoor / SDSD-outdoor | 表 1，分别用上游测试 YAML、测试名单与预处理获得各自 PSNR / SSIM，尚待评估 |
+| Retinexformer | MIT-Adobe FiveK 与论文模块消融 | 匹配作者处理后的 sRGB 划分。论文消融按原训练预算与配置重跑，尚待评估 |
+| LLFormer | LOL-v1 eval15 | 表 2，PSNR 23.6491、SSIM 0.8163、LPIPS 0.1692、MAE 0.0635，已复现 |
+| LLFormer | MIT-Adobe FiveK | 表 2，PSNR 25.7528、SSIM 0.9231、LPIPS 0.0447、MAE 0.0505。已定位作者 test 中的 high/low 数据目录与权重目录，尚待下载和评估 |
+| LLFormer | UHD-LOL4K / UHD-LOL8K | 表 1，分别使用官方 2,100 / 937 对测试图、对应权重与原论文分块协议，计算全图 PSNR、SSIM、LPIPS、MAE，尚待评估 |
+| LLFormer | 原论文训练与消融 | 独立核对作者训练配置、检查点和原论文消融设置，尚待评估 |
+| 课题 M4 | LLFormer 分块、Hann 和流式拼接 | LOL-v1 全 15 对图和 2048 长边扩展均已实测。原生 UHD 另用同图、同权重、同网格对照均值、Hann 及堆叠/流式资源开销 |
+
+原生 UHD 先用一对官方 4K 样本完成覆盖率、逐像素一致性和资源冒烟，再分批跑完整测试划分。准备可访问的官方配对文件、对应 checkpoint，以及 CUDA GPU 和足够磁盘。4K 测试下载约 69.7 GB，解包和输出还需额外空间。本机仅有 AMD 集显，C 盘检查剩余约 50 GiB。两篇论文的原始训练配置保存在各自官方项目。分支中的 Retinexformer 补充消融默认记录修正开关并运行前向，完整训练使用 CUDA 入口。
+
+来源 [Retinexformer 论文](https://arxiv.org/html/2303.06705) · [Retinexformer 官方数据与测试入口](https://github.com/caiyuanhao1998/Retinexformer#testing) · [LLFormer 论文](https://arxiv.org/html/2212.11548) · [LLFormer 官方数据与权重](https://github.com/TaoWangzj/LLFormer#downloads)。

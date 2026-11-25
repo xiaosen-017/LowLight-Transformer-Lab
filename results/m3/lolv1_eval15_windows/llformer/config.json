@@ -1,0 +1,14 @@
+{
+  "upstream": "ed5e7bf61d2dc64ba3b4552b90eb68a38f6c5302",
+  "weights_sha256": "2ff4907e4c277194adaa3ff302a01eb04d54ac9908afe70acbcfed2029d81551",
+  "strict_state_keys": 1485,
+  "model": "llformer",
+  "platform": "Windows-10-10.0.22000-SP0",
+  "python": "3.7.9",
+  "torch": "1.13.1+cpu",
+  "numpy": "1.21.6",
+  "threads": 4,
+  "script_sha256": "0c04e41fd0a550e6c3160a30a218738bc67ecd0bd80053b6ba7d9ea7fd243a31",
+  "setup_s": 1.3245417999999995,
+  "device": "cpu"
+}

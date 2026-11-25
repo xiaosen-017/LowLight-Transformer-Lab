@@ -1,3 +1,3 @@
 # M3 配对评估
 
-[LLFormer 的 LOL-v1 整图复现、逐图指标与 CPU 测量](llformer/README.md)。原版网络和匹配权重；完整 eval15 共 15 对。Retinexformer 的同机正式测量及两模型对比仍待完成。
+两个官方预训练模型已在完整 LOL-v1 eval15 上完成论文同口径复现及同机对照。参见 [逐图记录、时间与论文对照](../../results/m3/lolv1_eval15_windows/REPORT.md)。PR #13 的 [LLFormer 首轮 macOS 独立记录](llformer/README.md) 同时保留。

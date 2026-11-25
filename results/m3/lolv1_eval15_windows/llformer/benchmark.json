@@ -1,0 +1,53 @@
+{
+  "sample": "111.png",
+  "input_sha256": "5f10ef298a617c239e0728610a565416b4503ed40384cc9710e8bbd55f22ef47",
+  "peak_process_bytes": 1906606080,
+  "rows": [
+    {
+      "index": 0,
+      "warmup": true,
+      "forward_s": 40.29951560000006,
+      "end_to_end_s": 40.56210880000003,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    },
+    {
+      "index": 1,
+      "warmup": false,
+      "forward_s": 42.598679699999934,
+      "end_to_end_s": 42.923056299999985,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    },
+    {
+      "index": 2,
+      "warmup": false,
+      "forward_s": 48.3176072,
+      "end_to_end_s": 48.66362909999998,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    },
+    {
+      "index": 3,
+      "warmup": false,
+      "forward_s": 44.00518850000003,
+      "end_to_end_s": 44.28607599999998,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    },
+    {
+      "index": 4,
+      "warmup": false,
+      "forward_s": 39.0727124,
+      "end_to_end_s": 39.302198100000055,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    },
+    {
+      "index": 5,
+      "warmup": false,
+      "forward_s": 40.44449959999997,
+      "end_to_end_s": 40.76396949999992,
+      "output_sha256": "cfee63ce5e3d8380bb62a7b254f572d9a8a24119f7fb28158e6250033096b119"
+    }
+  ],
+  "medians": {
+    "forward_s": 42.598679699999934,
+    "end_to_end_s": 42.923056299999985
+  }
+}
